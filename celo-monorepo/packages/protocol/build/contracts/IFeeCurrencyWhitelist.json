@@ -1,0 +1,377 @@
+{
+  "contractName": "IFeeCurrencyWhitelist",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "addToken",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getWhitelist",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.13+commit.5b0b510c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"addToken\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getWhitelist\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/IFeeCurrencyWhitelist.sol\":\"IFeeCurrencyWhitelist\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/IFeeCurrencyWhitelist.sol\":{\"keccak256\":\"0xd4711baf3e38a0abeb3ef48eaab21aeb917f5e0a185cf463fddeb4bf20277b68\",\"urls\":[\"bzz-raw://8f350863943ab54dcf4d5ea525c16748f59263bf36c1d85251c1164d0e592032\",\"dweb:/ipfs/QmXAG6fvVQKM86rVsk6R3ndEoHtS9fcAAVxBApJ5j3LWeK\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.5.13;\n\ninterface IFeeCurrencyWhitelist {\n  function addToken(address) external;\n  function getWhitelist() external view returns (address[] memory);\n}\n",
+  "sourcePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/IFeeCurrencyWhitelist.sol",
+  "ast": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/IFeeCurrencyWhitelist.sol",
+    "exportedSymbols": {
+      "IFeeCurrencyWhitelist": [
+        9354
+      ]
+    },
+    "id": 9355,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9342,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:28"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 9354,
+        "linearizedBaseContracts": [
+          9354
+        ],
+        "name": "IFeeCurrencyWhitelist",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 9347,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9345,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9344,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9347,
+                  "src": "80:7:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9343,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "80:7:28",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "79:9:28"
+            },
+            "returnParameters": {
+              "id": 9346,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "97:0:28"
+            },
+            "scope": 9354,
+            "src": "62:36:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 9353,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getWhitelist",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9348,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "122:2:28"
+            },
+            "returnParameters": {
+              "id": 9352,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9351,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9353,
+                  "src": "148:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 9349,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "148:7:28",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 9350,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "148:9:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "147:18:28"
+            },
+            "scope": 9354,
+            "src": "101:65:28",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9355,
+        "src": "26:142:28"
+      }
+    ],
+    "src": "0:169:28"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/IFeeCurrencyWhitelist.sol",
+    "exportedSymbols": {
+      "IFeeCurrencyWhitelist": [
+        9354
+      ]
+    },
+    "id": 9355,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9342,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:28"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 9354,
+        "linearizedBaseContracts": [
+          9354
+        ],
+        "name": "IFeeCurrencyWhitelist",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 9347,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9345,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9344,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9347,
+                  "src": "80:7:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9343,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "80:7:28",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "79:9:28"
+            },
+            "returnParameters": {
+              "id": 9346,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "97:0:28"
+            },
+            "scope": 9354,
+            "src": "62:36:28",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 9353,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getWhitelist",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9348,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "122:2:28"
+            },
+            "returnParameters": {
+              "id": 9352,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9351,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9353,
+                  "src": "148:16:28",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 9349,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "148:7:28",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 9350,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "148:9:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "147:18:28"
+            },
+            "scope": 9354,
+            "src": "101:65:28",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9355,
+        "src": "26:142:28"
+      }
+    ],
+    "src": "0:169:28"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.13+commit.5b0b510c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2022-05-06T03:53:12.734Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

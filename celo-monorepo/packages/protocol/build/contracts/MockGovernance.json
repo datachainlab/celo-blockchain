@@ -1,0 +1,647 @@
+{
+  "contractName": "MockGovernance",
+  "abi": [
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "isVoting",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "voter",
+          "type": "address"
+        }
+      ],
+      "name": "setVoting",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.13+commit.5b0b510c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"isVoting\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"voter\",\"type\":\"address\"}],\"name\":\"setVoting\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{},\"title\":\"A mock Governance for testing.\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/test/MockGovernance.sol\":\"MockGovernance\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/interfaces/IGovernance.sol\":{\"keccak256\":\"0x227bf6a6b56411c368c9752761e2202ad71f2199deb2b114b125712b63372b7e\",\"urls\":[\"bzz-raw://cabeae6e6c47364291f12cf69658dcf5bdd8ac7eebda53d48a2b03aab96386a3\",\"dweb:/ipfs/QmUtPSC4hVz79XVVjFwQ6CozMd6oAR1m6yrPFkHD5sCdB1\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/test/MockGovernance.sol\":{\"keccak256\":\"0xfccb6c30c82fd3413ee386e25a2033d83f988ec9633b1d98490d66f77f4ad419\",\"urls\":[\"bzz-raw://d5094a41d0784f7e8b9a95395860a95f04e350ed9ebed73e4f35e61ace3939d8\",\"dweb:/ipfs/QmTmvCvwdqVmsi9Q1H73gZBWxKyMidwKbzAhMfHaYWiwWo\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610194806100206000396000f3fe6080604052600436106100295760003560e01c80635f8dd6491461002b578063c4d0795114610094575b005b34801561003757600080fd5b5061007a6004803603602081101561004e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100e5565b604051808215151515815260200191505060405180910390f35b3480156100a057600080fd5b506100e3600480360360208110156100b757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610105565b005b60006020528060005260406000206000915054906101000a900460ff1681565b60016000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505056fea265627a7a72315820a486f750f23aef9e70ae1af64e880637c9d444384140d06196fa38f0e23e239d64736f6c634300050d0032",
+  "deployedBytecode": "0x6080604052600436106100295760003560e01c80635f8dd6491461002b578063c4d0795114610094575b005b34801561003757600080fd5b5061007a6004803603602081101561004e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100e5565b604051808215151515815260200191505060405180910390f35b3480156100a057600080fd5b506100e3600480360360208110156100b757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610105565b005b60006020528060005260406000206000915054906101000a900460ff1681565b60016000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505056fea265627a7a72315820a486f750f23aef9e70ae1af64e880637c9d444384140d06196fa38f0e23e239d64736f6c634300050d0032",
+  "sourceMap": "116:235:99:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;116:235:99;;;;;;;",
+  "deployedSourceMap": "116:235:99:-;;;;;;;;;;;;;;;;;;;;;;;;159:40;;8:9:-1;5:2;;;30:1;27;20:12;5:2;159:40:99;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;159:40:99;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;273:76;;8:9:-1;5:2;;;30:1;27;20:12;5:2;273:76:99;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;273:76:99;;;;;;;;;;;;;;;;;;;:::i;:::-;;159:40;;;;;;;;;;;;;;;;;;;;;;:::o;273:76::-;340:4;322:8;:15;331:5;322:15;;;;;;;;;;;;;;;;:22;;;;;;;;;;;;;;;;;;273:76;:::o",
+  "source": "pragma solidity ^0.5.13;\n\nimport \"../interfaces/IGovernance.sol\";\n\n/**\n * @title A mock Governance for testing.\n */\ncontract MockGovernance is IGovernance {\n  mapping(address => bool) public isVoting;\n\n  function() external payable {} // solhint-disable no-empty-blocks\n\n  function setVoting(address voter) external {\n    isVoting[voter] = true;\n  }\n}\n",
+  "sourcePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/test/MockGovernance.sol",
+  "ast": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/test/MockGovernance.sol",
+    "exportedSymbols": {
+      "MockGovernance": [
+        31496
+      ]
+    },
+    "id": 31497,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 31472,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:99"
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/interfaces/IGovernance.sol",
+        "file": "../interfaces/IGovernance.sol",
+        "id": 31473,
+        "nodeType": "ImportDirective",
+        "scope": 31497,
+        "sourceUnit": 30279,
+        "src": "26:39:99",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 31474,
+              "name": "IGovernance",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 30278,
+              "src": "143:11:99",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IGovernance_$30278",
+                "typeString": "contract IGovernance"
+              }
+            },
+            "id": 31475,
+            "nodeType": "InheritanceSpecifier",
+            "src": "143:11:99"
+          }
+        ],
+        "contractDependencies": [
+          30278
+        ],
+        "contractKind": "contract",
+        "documentation": "@title A mock Governance for testing.",
+        "fullyImplemented": true,
+        "id": 31496,
+        "linearizedBaseContracts": [
+          31496,
+          30278
+        ],
+        "name": "MockGovernance",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 31479,
+            "name": "isVoting",
+            "nodeType": "VariableDeclaration",
+            "scope": 31496,
+            "src": "159:40:99",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+              "typeString": "mapping(address => bool)"
+            },
+            "typeName": {
+              "id": 31478,
+              "keyType": {
+                "id": 31476,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "167:7:99",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "159:24:99",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                "typeString": "mapping(address => bool)"
+              },
+              "valueType": {
+                "id": 31477,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "178:4:99",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 31482,
+              "nodeType": "Block",
+              "src": "232:2:99",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 31483,
+            "implemented": true,
+            "kind": "fallback",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 31480,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "212:2:99"
+            },
+            "returnParameters": {
+              "id": 31481,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "232:0:99"
+            },
+            "scope": 31496,
+            "src": "204:30:99",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 31494,
+              "nodeType": "Block",
+              "src": "316:33:99",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 31492,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 31488,
+                        "name": "isVoting",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 31479,
+                        "src": "322:8:99",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 31490,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 31489,
+                        "name": "voter",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 31485,
+                        "src": "331:5:99",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "322:15:99",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 31491,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "340:4:99",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "322:22:99",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 31493,
+                  "nodeType": "ExpressionStatement",
+                  "src": "322:22:99"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 31495,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setVoting",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 31486,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31485,
+                  "name": "voter",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31495,
+                  "src": "292:13:99",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 31484,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "292:7:99",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "291:15:99"
+            },
+            "returnParameters": {
+              "id": 31487,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "316:0:99"
+            },
+            "scope": 31496,
+            "src": "273:76:99",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 31497,
+        "src": "116:235:99"
+      }
+    ],
+    "src": "0:352:99"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/test/MockGovernance.sol",
+    "exportedSymbols": {
+      "MockGovernance": [
+        31496
+      ]
+    },
+    "id": 31497,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 31472,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:99"
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/interfaces/IGovernance.sol",
+        "file": "../interfaces/IGovernance.sol",
+        "id": 31473,
+        "nodeType": "ImportDirective",
+        "scope": 31497,
+        "sourceUnit": 30279,
+        "src": "26:39:99",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 31474,
+              "name": "IGovernance",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 30278,
+              "src": "143:11:99",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IGovernance_$30278",
+                "typeString": "contract IGovernance"
+              }
+            },
+            "id": 31475,
+            "nodeType": "InheritanceSpecifier",
+            "src": "143:11:99"
+          }
+        ],
+        "contractDependencies": [
+          30278
+        ],
+        "contractKind": "contract",
+        "documentation": "@title A mock Governance for testing.",
+        "fullyImplemented": true,
+        "id": 31496,
+        "linearizedBaseContracts": [
+          31496,
+          30278
+        ],
+        "name": "MockGovernance",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 31479,
+            "name": "isVoting",
+            "nodeType": "VariableDeclaration",
+            "scope": 31496,
+            "src": "159:40:99",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+              "typeString": "mapping(address => bool)"
+            },
+            "typeName": {
+              "id": 31478,
+              "keyType": {
+                "id": 31476,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "167:7:99",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "159:24:99",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                "typeString": "mapping(address => bool)"
+              },
+              "valueType": {
+                "id": 31477,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "178:4:99",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 31482,
+              "nodeType": "Block",
+              "src": "232:2:99",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 31483,
+            "implemented": true,
+            "kind": "fallback",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 31480,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "212:2:99"
+            },
+            "returnParameters": {
+              "id": 31481,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "232:0:99"
+            },
+            "scope": 31496,
+            "src": "204:30:99",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 31494,
+              "nodeType": "Block",
+              "src": "316:33:99",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 31492,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 31488,
+                        "name": "isVoting",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 31479,
+                        "src": "322:8:99",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 31490,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 31489,
+                        "name": "voter",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 31485,
+                        "src": "331:5:99",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "322:15:99",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 31491,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "340:4:99",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "322:22:99",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 31493,
+                  "nodeType": "ExpressionStatement",
+                  "src": "322:22:99"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 31495,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setVoting",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 31486,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31485,
+                  "name": "voter",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31495,
+                  "src": "292:13:99",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 31484,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "292:7:99",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "291:15:99"
+            },
+            "returnParameters": {
+              "id": 31487,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "316:0:99"
+            },
+            "scope": 31496,
+            "src": "273:76:99",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 31497,
+        "src": "116:235:99"
+      }
+    ],
+    "src": "0:352:99"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.13+commit.5b0b510c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2022-05-06T03:53:12.976Z",
+  "devdoc": {
+    "methods": {},
+    "title": "A mock Governance for testing."
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

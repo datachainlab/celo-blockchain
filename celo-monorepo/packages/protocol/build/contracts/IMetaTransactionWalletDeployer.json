@@ -1,0 +1,348 @@
+{
+  "contractName": "IMetaTransactionWalletDeployer",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "deploy",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.13+commit.5b0b510c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"deploy\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/IMetaTransactionWalletDeployer.sol\":\"IMetaTransactionWalletDeployer\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/IMetaTransactionWalletDeployer.sol\":{\"keccak256\":\"0x7e715e3d844f6129446d57a7235a8286e7f9dd83ddc9361f57e40e7dc649443b\",\"urls\":[\"bzz-raw://ffbea80a97dd7f4788dd668f975c0403a5ce71d92ca7ce87d00e22d2e2b3d72e\",\"dweb:/ipfs/QmTrsGf3QYQYqvEvWjGx2ZMcKxEgMD7rXMHZtb1wpdjERN\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.5.3;\n\ninterface IMetaTransactionWalletDeployer {\n  function deploy(address, address, bytes calldata) external;\n}\n",
+  "sourcePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/IMetaTransactionWalletDeployer.sol",
+  "ast": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/IMetaTransactionWalletDeployer.sol",
+    "exportedSymbols": {
+      "IMetaTransactionWalletDeployer": [
+        9466
+      ]
+    },
+    "id": 9467,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9456,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".3"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:31"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 9466,
+        "linearizedBaseContracts": [
+          9466
+        ],
+        "name": "IMetaTransactionWalletDeployer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 9465,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deploy",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9463,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9458,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9465,
+                  "src": "86:7:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9457,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "86:7:31",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9460,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9465,
+                  "src": "95:7:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9459,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "95:7:31",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9462,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9465,
+                  "src": "104:14:31",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 9461,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "104:5:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "85:34:31"
+            },
+            "returnParameters": {
+              "id": 9464,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "128:0:31"
+            },
+            "scope": 9466,
+            "src": "70:59:31",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9467,
+        "src": "25:106:31"
+      }
+    ],
+    "src": "0:132:31"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/IMetaTransactionWalletDeployer.sol",
+    "exportedSymbols": {
+      "IMetaTransactionWalletDeployer": [
+        9466
+      ]
+    },
+    "id": 9467,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9456,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".3"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:31"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 9466,
+        "linearizedBaseContracts": [
+          9466
+        ],
+        "name": "IMetaTransactionWalletDeployer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 9465,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deploy",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9463,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9458,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9465,
+                  "src": "86:7:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9457,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "86:7:31",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9460,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9465,
+                  "src": "95:7:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9459,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "95:7:31",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9462,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9465,
+                  "src": "104:14:31",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 9461,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "104:5:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "85:34:31"
+            },
+            "returnParameters": {
+              "id": 9464,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "128:0:31"
+            },
+            "scope": 9466,
+            "src": "70:59:31",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9467,
+        "src": "25:106:31"
+      }
+    ],
+    "src": "0:132:31"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.13+commit.5b0b510c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2022-05-06T03:53:12.738Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

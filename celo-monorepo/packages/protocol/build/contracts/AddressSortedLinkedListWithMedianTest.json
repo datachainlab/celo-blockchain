@@ -1,0 +1,3370 @@
+{
+  "contractName": "AddressSortedLinkedListWithMedianTest",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "key",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "numerator",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "lesserKey",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "greaterKey",
+          "type": "address"
+        }
+      ],
+      "name": "insert",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "key",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "numerator",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "lesserKey",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "greaterKey",
+          "type": "address"
+        }
+      ],
+      "name": "update",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "key",
+          "type": "address"
+        }
+      ],
+      "name": "remove",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "key",
+          "type": "address"
+        }
+      ],
+      "name": "contains",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getNumElements",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getElements",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "enum SortedLinkedListWithMedian.MedianRelation[]",
+          "name": "",
+          "type": "uint8[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "head",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tail",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "medianKey",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.13+commit.5b0b510c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"key\",\"type\":\"address\"}],\"name\":\"contains\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getElements\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"},{\"internalType\":\"enum SortedLinkedListWithMedian.MedianRelation[]\",\"name\":\"\",\"type\":\"uint8[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getNumElements\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"head\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"key\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"numerator\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"lesserKey\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"greaterKey\",\"type\":\"address\"}],\"name\":\"insert\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"medianKey\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"key\",\"type\":\"address\"}],\"name\":\"remove\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tail\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"key\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"numerator\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"lesserKey\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"greaterKey\",\"type\":\"address\"}],\"name\":\"update\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/test/AddressSortedLinkedListWithMedianTest.sol\":\"AddressSortedLinkedListWithMedianTest\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/linkedlists/AddressSortedLinkedListWithMedian.sol\":{\"keccak256\":\"0xfd509ed9580107ff5965c7ae041fe1949584a01c1f526fa94154cfbbcba6e1ab\",\"urls\":[\"bzz-raw://4570dfdd9b10d411e660c0ca126f5bed7c52aabcb5e38afa4828b02bf9429302\",\"dweb:/ipfs/QmWzcs9eFqy8ZfjG7Fthm7ag1MMLCRunNMg4ygy8tTAAYA\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/linkedlists/LinkedList.sol\":{\"keccak256\":\"0x9104cbf273bd44a5845784a7540066ce80d543912b8b84742094e80adac3f1a3\",\"urls\":[\"bzz-raw://13a83ce756b0287f135d8f67080bbac7e9c8f9e184b617d0768fd8f2308a4d66\",\"dweb:/ipfs/Qma3PWVFzh413P42jDt3XhECLAw2cf3F8qAZo25L4wryhw\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/linkedlists/SortedLinkedList.sol\":{\"keccak256\":\"0x30e96d6b70e013b12aa4e69e5e63dc4d260c5947babdec15af3d52a044bfcbf6\",\"urls\":[\"bzz-raw://7809f87d01a0db588d76d25a9ff3560029073131bfc4c52fa2ba5a7e8d08fa8e\",\"dweb:/ipfs/QmX6hXN75U1bbYPbaGeCEk7hen95XwwutoU24sqo8YVkSF\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/linkedlists/SortedLinkedListWithMedian.sol\":{\"keccak256\":\"0xe73ea702d66cf4acf308241153d63d7908d12d106964e778062395fe2c4cffe2\",\"urls\":[\"bzz-raw://c1bdc5f7809d6089a9a2913dc5d6093892853d0883283b74a6ec30e36a00d923\",\"dweb:/ipfs/QmcKNX7Np117vbMMscc5JaiwjE7E4FLkKdw3vL3yDi1crY\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/test/AddressSortedLinkedListWithMedianTest.sol\":{\"keccak256\":\"0xc3ecab1a513415cf80de0b57c4691f0aab570e8e84a998fc8fb69fb111b1be1f\",\"urls\":[\"bzz-raw://cebed7f7e3baf888f9ece88cba76091cf714d672c73cbe2afe45e98eaba685a5\",\"dweb:/ipfs/QmV5TzAv7hvEptpBsZ2mQUd2PfR4MqXbE2SMwWW6mcNLWf\"]},\"openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076\",\"urls\":[\"bzz-raw://31113152e1ddb78fe7a4197f247591ca894e93f916867beb708d8e747b6cc74f\",\"dweb:/ipfs/QmbZaJyXdpsYGykVhHH9qpVGQg9DGCxE2QufbCUy3daTgq\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610caf806100206000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c80635f167276116100665780635f1672761461021057806364163ad11461022e5780638f7dcfa3146102bc57806391d35ad714610306578063b1a18cc71461035057610093565b806313d8c8401461009857806329092d0e146100e257806346f7cf87146101265780635dbe47e8146101b4575b600080fd5b6100a061043f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610124600480360360208110156100f857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506104d2565b005b6101b26004803603608081101561013c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610573565b005b6101f6600480360360208110156101ca57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610687565b604051808215151515815260200191505060405180910390f35b610218610750565b6040518082815260200191505060405180910390f35b6102ba6004803603608081101561024457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506107e3565b005b6102c46108f7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61030e61098a565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610358610a1d565b60405180806020018060200180602001848103845287818151815260200191508051906020019060200280838360005b838110156103a3578082015181840152602081019050610388565b50505050905001848103835286818151815260200191508051906020019060200280838360005b838110156103e55780820151818401526020810190506103ca565b50505050905001848103825285818151815260200191508051906020019060200280838360005b8381101561042757808201518184015260208101905061040c565b50505050905001965050505050505060405180910390f35b60008073__AddressSortedLinkedListWithMedian_____63d938ec7b90916040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b15801561049257600080fd5b505af41580156104a6573d6000803e3d6000fd5b505050506040513d60208110156104bc57600080fd5b8101908080519060200190929190505050905090565b600073__AddressSortedLinkedListWithMedian_____63c1e728e99091836040518363ffffffff1660e01b8152600401808381526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019250505060006040518083038186803b15801561055857600080fd5b505af415801561056c573d6000803e3d6000fd5b5050505050565b600073__AddressSortedLinkedListWithMedian_____63d4a092729091868686866040518663ffffffff1660e01b8152600401808681526020018573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018481526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019550505050505060006040518083038186803b15801561066957600080fd5b505af415801561067d573d6000803e3d6000fd5b5050505050505050565b60008073__AddressSortedLinkedListWithMedian_____6395073a799091846040518363ffffffff1660e01b8152600401808381526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019250505060206040518083038186803b15801561070e57600080fd5b505af4158015610722573d6000803e3d6000fd5b505050506040513d602081101561073857600080fd5b81019080805190602001909291905050509050919050565b60008073__AddressSortedLinkedListWithMedian_____636eafa6c390916040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b1580156107a357600080fd5b505af41580156107b7573d6000803e3d6000fd5b505050506040513d60208110156107cd57600080fd5b8101908080519060200190929190505050905090565b600073__AddressSortedLinkedListWithMedian_____63832a21479091868686866040518663ffffffff1660e01b8152600401808681526020018573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018481526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019550505050505060006040518083038186803b1580156108d957600080fd5b505af41580156108ed573d6000803e3d6000fd5b5050505050505050565b60008073__AddressSortedLinkedListWithMedian_____630944c59490916040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b15801561094a57600080fd5b505af415801561095e573d6000803e3d6000fd5b505050506040513d602081101561097457600080fd5b8101908080519060200190929190505050905090565b60008073__AddressSortedLinkedListWithMedian_____633118159e90916040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b1580156109dd57600080fd5b505af41580156109f1573d6000803e3d6000fd5b505050506040513d6020811015610a0757600080fd5b8101908080519060200190929190505050905090565b6060806060600073__AddressSortedLinkedListWithMedian_____636cfa387390916040518263ffffffff1660e01b81526004018082815260200191505060006040518083038186803b158015610a7457600080fd5b505af4158015610a88573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f820116820180604052506060811015610ab257600080fd5b8101908080516040519392919084640100000000821115610ad257600080fd5b83820191506020820185811115610ae857600080fd5b8251866020820283011164010000000082111715610b0557600080fd5b8083526020830192505050908051906020019060200280838360005b83811015610b3c578082015181840152602081019050610b21565b5050505090500160405260200180516040519392919084640100000000821115610b6557600080fd5b83820191506020820185811115610b7b57600080fd5b8251866020820283011164010000000082111715610b9857600080fd5b8083526020830192505050908051906020019060200280838360005b83811015610bcf578082015181840152602081019050610bb4565b5050505090500160405260200180516040519392919084640100000000821115610bf857600080fd5b83820191506020820185811115610c0e57600080fd5b8251866020820283011164010000000082111715610c2b57600080fd5b8083526020830192505050908051906020019060200280838360005b83811015610c62578082015181840152602081019050610c47565b5050505090500160405250505092509250925090919256fea265627a7a72315820e103567ac9b34540a9d3ed8b4625f408b220235c105cf6b2259fd47df96cf6ea64736f6c634300050d0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100935760003560e01c80635f167276116100665780635f1672761461021057806364163ad11461022e5780638f7dcfa3146102bc57806391d35ad714610306578063b1a18cc71461035057610093565b806313d8c8401461009857806329092d0e146100e257806346f7cf87146101265780635dbe47e8146101b4575b600080fd5b6100a061043f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610124600480360360208110156100f857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506104d2565b005b6101b26004803603608081101561013c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610573565b005b6101f6600480360360208110156101ca57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610687565b604051808215151515815260200191505060405180910390f35b610218610750565b6040518082815260200191505060405180910390f35b6102ba6004803603608081101561024457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506107e3565b005b6102c46108f7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61030e61098a565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610358610a1d565b60405180806020018060200180602001848103845287818151815260200191508051906020019060200280838360005b838110156103a3578082015181840152602081019050610388565b50505050905001848103835286818151815260200191508051906020019060200280838360005b838110156103e55780820151818401526020810190506103ca565b50505050905001848103825285818151815260200191508051906020019060200280838360005b8381101561042757808201518184015260208101905061040c565b50505050905001965050505050505060405180910390f35b60008073__AddressSortedLinkedListWithMedian_____63d938ec7b90916040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b15801561049257600080fd5b505af41580156104a6573d6000803e3d6000fd5b505050506040513d60208110156104bc57600080fd5b8101908080519060200190929190505050905090565b600073__AddressSortedLinkedListWithMedian_____63c1e728e99091836040518363ffffffff1660e01b8152600401808381526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019250505060006040518083038186803b15801561055857600080fd5b505af415801561056c573d6000803e3d6000fd5b5050505050565b600073__AddressSortedLinkedListWithMedian_____63d4a092729091868686866040518663ffffffff1660e01b8152600401808681526020018573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018481526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019550505050505060006040518083038186803b15801561066957600080fd5b505af415801561067d573d6000803e3d6000fd5b5050505050505050565b60008073__AddressSortedLinkedListWithMedian_____6395073a799091846040518363ffffffff1660e01b8152600401808381526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019250505060206040518083038186803b15801561070e57600080fd5b505af4158015610722573d6000803e3d6000fd5b505050506040513d602081101561073857600080fd5b81019080805190602001909291905050509050919050565b60008073__AddressSortedLinkedListWithMedian_____636eafa6c390916040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b1580156107a357600080fd5b505af41580156107b7573d6000803e3d6000fd5b505050506040513d60208110156107cd57600080fd5b8101908080519060200190929190505050905090565b600073__AddressSortedLinkedListWithMedian_____63832a21479091868686866040518663ffffffff1660e01b8152600401808681526020018573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018481526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019550505050505060006040518083038186803b1580156108d957600080fd5b505af41580156108ed573d6000803e3d6000fd5b5050505050505050565b60008073__AddressSortedLinkedListWithMedian_____630944c59490916040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b15801561094a57600080fd5b505af415801561095e573d6000803e3d6000fd5b505050506040513d602081101561097457600080fd5b8101908080519060200190929190505050905090565b60008073__AddressSortedLinkedListWithMedian_____633118159e90916040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b1580156109dd57600080fd5b505af41580156109f1573d6000803e3d6000fd5b505050506040513d6020811015610a0757600080fd5b8101908080519060200190929190505050905090565b6060806060600073__AddressSortedLinkedListWithMedian_____636cfa387390916040518263ffffffff1660e01b81526004018082815260200191505060006040518083038186803b158015610a7457600080fd5b505af4158015610a88573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f820116820180604052506060811015610ab257600080fd5b8101908080516040519392919084640100000000821115610ad257600080fd5b83820191506020820185811115610ae857600080fd5b8251866020820283011164010000000082111715610b0557600080fd5b8083526020830192505050908051906020019060200280838360005b83811015610b3c578082015181840152602081019050610b21565b5050505090500160405260200180516040519392919084640100000000821115610b6557600080fd5b83820191506020820185811115610b7b57600080fd5b8251866020820283011164010000000082111715610b9857600080fd5b8083526020830192505050908051906020019060200280838360005b83811015610bcf578082015181840152602081019050610bb4565b5050505090500160405260200180516040519392919084640100000000821115610bf857600080fd5b83820191506020820185811115610c0e57600080fd5b8251866020820283011164010000000082111715610c2b57600080fd5b8083526020830192505050908051906020019060200280838360005b83811015610c62578082015181840152602081019050610c47565b5050505090500160405250505092509250925090919256fea265627a7a72315820e103567ac9b34540a9d3ed8b4625f408b220235c105cf6b2259fd47df96cf6ea64736f6c634300050d0032",
+  "sourceMap": "146:1217:50:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;146:1217:50;;;;;;;",
+  "deployedSourceMap": "146:1217:50:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;146:1217:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1190:80;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;648:65;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;648:65:50;;;;;;;;;;;;;;;;;;;:::i;:::-;;326:157;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;326:157:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;717:96;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;717:96:50;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;817:97;;;:::i;:::-;;;;;;;;;;;;;;;;;;;487:157;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;487:157:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;1106:80;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1274:87;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;918:184;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;918:184:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;918:184:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;918:184:50;;;;;;;;;;;;;;;;;;;;;1190:80;1229:7;1251:4;:12;;;;:14;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1251:14:50;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1251:14:50;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1251:14:50;;;;;;;;;;;;;;;;1244:21;;1190:80;:::o;648:65::-;692:4;:11;;;;704:3;692:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;692:16:50;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;692:16:50;;;;648:65;:::o;326:157::-;428:4;:11;;;;440:3;445:9;456;467:10;428:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;428:50:50;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;428:50:50;;;;326:157;;;;:::o;717:96::-;771:4;790;:13;;;;804:3;790:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;790:18:50;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;790:18:50;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;790:18:50;;;;;;;;;;;;;;;;783:25;;717:96;;;:::o;817:97::-;866:7;888:4;:19;;;;:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;888:21:50;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;888:21:50;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;888:21:50;;;;;;;;;;;;;;;;881:28;;817:97;:::o;487:157::-;589:4;:11;;;;601:3;606:9;617;628:10;589:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;589:50:50;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;589:50:50;;;;487:157;;;;:::o;1106:80::-;1145:7;1167:4;:12;;;;:14;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1167:14:50;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1167:14:50;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1167:14:50;;;;;;;;;;;;;;;;1160:21;;1106:80;:::o;1274:87::-;1318:7;1340:4;:14;;;;:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1340:16:50;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1340:16:50;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1340:16:50;;;;;;;;;;;;;;;;1333:23;;1274:87;:::o;918:184::-;976:16;994;1012:50;1079:4;:16;;;;:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1079:18:50;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1079:18:50;;;;;;39:16:-1;36:1;17:17;2:54;1079:18:50;101:4:-1;97:9;90:4;84;80:15;76:31;69:5;65:43;126:6;120:4;113:20;0:138;13:2;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1079:18:50;;;;;;;;;;;;;19:11:-1;14:3;11:20;8:2;;;44:1;41;34:12;8:2;71:11;66:3;62:21;55:28;;123:4;118:3;114:14;159:9;141:16;138:31;135:2;;;182:1;179;172:12;135:2;219:3;213:10;331:9;325:2;311:12;307:21;289:16;285:44;282:59;261:11;247:12;244:29;233:116;230:2;;;362:1;359;352:12;230:2;385:12;380:3;373:25;421:4;416:3;412:14;405:21;;0:433;;1079:18:50;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1079:18:50;;;;;;;;;;;;;;;;;;;19:11:-1;14:3;11:20;8:2;;;44:1;41;34:12;8:2;71:11;66:3;62:21;55:28;;123:4;118:3;114:14;159:9;141:16;138:31;135:2;;;182:1;179;172:12;135:2;219:3;213:10;331:9;325:2;311:12;307:21;289:16;285:44;282:59;261:11;247:12;244:29;233:116;230:2;;;362:1;359;352:12;230:2;385:12;380:3;373:25;421:4;416:3;412:14;405:21;;0:433;;1079:18:50;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1079:18:50;;;;;;;;;;;;;;;;;;;19:11:-1;14:3;11:20;8:2;;;44:1;41;34:12;8:2;71:11;66:3;62:21;55:28;;123:4;118:3;114:14;159:9;141:16;138:31;135:2;;;182:1;179;172:12;135:2;219:3;213:10;331:9;325:2;311:12;307:21;289:16;285:44;282:59;261:11;247:12;244:29;233:116;230:2;;;362:1;359;352:12;230:2;385:12;380:3;373:25;421:4;416:3;412:14;405:21;;0:433;;1079:18:50;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1079:18:50;;;;;;;;;;;1072:25;;;;;;918:184;;;:::o",
+  "source": "pragma solidity ^0.5.13;\n\nimport \"../linkedlists/AddressSortedLinkedListWithMedian.sol\";\nimport \"../linkedlists/SortedLinkedListWithMedian.sol\";\n\ncontract AddressSortedLinkedListWithMedianTest {\n  using AddressSortedLinkedListWithMedian for SortedLinkedListWithMedian.List;\n\n  SortedLinkedListWithMedian.List private list;\n\n  function insert(address key, uint256 numerator, address lesserKey, address greaterKey) external {\n    list.insert(key, numerator, lesserKey, greaterKey);\n  }\n\n  function update(address key, uint256 numerator, address lesserKey, address greaterKey) external {\n    list.update(key, numerator, lesserKey, greaterKey);\n  }\n\n  function remove(address key) external {\n    list.remove(key);\n  }\n\n  function contains(address key) external view returns (bool) {\n    return list.contains(key);\n  }\n\n  function getNumElements() external view returns (uint256) {\n    return list.getNumElements();\n  }\n\n  function getElements()\n    external\n    view\n    returns (address[] memory, uint256[] memory, SortedLinkedListWithMedian.MedianRelation[] memory)\n  {\n    return list.getElements();\n  }\n\n  function head() external view returns (address) {\n    return list.getHead();\n  }\n\n  function tail() external view returns (address) {\n    return list.getTail();\n  }\n\n  function medianKey() external view returns (address) {\n    return list.getMedian();\n  }\n}\n",
+  "sourcePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/test/AddressSortedLinkedListWithMedianTest.sol",
+  "ast": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/test/AddressSortedLinkedListWithMedianTest.sol",
+    "exportedSymbols": {
+      "AddressSortedLinkedListWithMedianTest": [
+        12841
+      ]
+    },
+    "id": 12842,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 12709,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:50"
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/linkedlists/AddressSortedLinkedListWithMedian.sol",
+        "file": "../linkedlists/AddressSortedLinkedListWithMedian.sol",
+        "id": 12710,
+        "nodeType": "ImportDirective",
+        "scope": 12842,
+        "sourceUnit": 10647,
+        "src": "26:62:50",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/linkedlists/SortedLinkedListWithMedian.sol",
+        "file": "../linkedlists/SortedLinkedListWithMedian.sol",
+        "id": 12711,
+        "nodeType": "ImportDirective",
+        "scope": 12842,
+        "sourceUnit": 12660,
+        "src": "89:55:50",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 12841,
+        "linearizedBaseContracts": [
+          12841
+        ],
+        "name": "AddressSortedLinkedListWithMedianTest",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 12714,
+            "libraryName": {
+              "contractScope": null,
+              "id": 12712,
+              "name": "AddressSortedLinkedListWithMedian",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 10646,
+              "src": "203:33:50",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AddressSortedLinkedListWithMedian_$10646",
+                "typeString": "library AddressSortedLinkedListWithMedian"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "197:76:50",
+            "typeName": {
+              "contractScope": null,
+              "id": 12713,
+              "name": "SortedLinkedListWithMedian.List",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 12008,
+              "src": "241:31:50",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_List_$12008_storage_ptr",
+                "typeString": "struct SortedLinkedListWithMedian.List"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 12716,
+            "name": "list",
+            "nodeType": "VariableDeclaration",
+            "scope": 12841,
+            "src": "277:44:50",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_List_$12008_storage",
+              "typeString": "struct SortedLinkedListWithMedian.List"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 12715,
+              "name": "SortedLinkedListWithMedian.List",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 12008,
+              "src": "277:31:50",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_List_$12008_storage_ptr",
+                "typeString": "struct SortedLinkedListWithMedian.List"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 12736,
+              "nodeType": "Block",
+              "src": "422:61:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 12730,
+                        "name": "key",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12718,
+                        "src": "440:3:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 12731,
+                        "name": "numerator",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12720,
+                        "src": "445:9:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 12732,
+                        "name": "lesserKey",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12722,
+                        "src": "456:9:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 12733,
+                        "name": "greaterKey",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12724,
+                        "src": "467:10:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12727,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "428:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12729,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "insert",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10387,
+                      "src": "428:11:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_List_$12008_storage_ptr_$_t_address_$_t_uint256_$_t_address_$_t_address_$returns$__$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer,address,uint256,address,address)"
+                      }
+                    },
+                    "id": 12734,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "428:50:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 12735,
+                  "nodeType": "ExpressionStatement",
+                  "src": "428:50:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12737,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "insert",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12725,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12718,
+                  "name": "key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12737,
+                  "src": "342:11:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12717,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "342:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12720,
+                  "name": "numerator",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12737,
+                  "src": "355:17:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12719,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "355:7:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12722,
+                  "name": "lesserKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12737,
+                  "src": "374:17:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12721,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "374:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12724,
+                  "name": "greaterKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12737,
+                  "src": "393:18:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12723,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "393:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "341:71:50"
+            },
+            "returnParameters": {
+              "id": 12726,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "422:0:50"
+            },
+            "scope": 12841,
+            "src": "326:157:50",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12757,
+              "nodeType": "Block",
+              "src": "583:61:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 12751,
+                        "name": "key",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12739,
+                        "src": "601:3:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 12752,
+                        "name": "numerator",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12741,
+                        "src": "606:9:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 12753,
+                        "name": "lesserKey",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12743,
+                        "src": "617:9:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 12754,
+                        "name": "greaterKey",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12745,
+                        "src": "628:10:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12748,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "589:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12750,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "update",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10432,
+                      "src": "589:11:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_List_$12008_storage_ptr_$_t_address_$_t_uint256_$_t_address_$_t_address_$returns$__$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer,address,uint256,address,address)"
+                      }
+                    },
+                    "id": 12755,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "589:50:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 12756,
+                  "nodeType": "ExpressionStatement",
+                  "src": "589:50:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12758,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "update",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12746,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12739,
+                  "name": "key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12758,
+                  "src": "503:11:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12738,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "503:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12741,
+                  "name": "numerator",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12758,
+                  "src": "516:17:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12740,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "516:7:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12743,
+                  "name": "lesserKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12758,
+                  "src": "535:17:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12742,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "535:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12745,
+                  "name": "greaterKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12758,
+                  "src": "554:18:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12744,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "554:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "502:71:50"
+            },
+            "returnParameters": {
+              "id": 12747,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "583:0:50"
+            },
+            "scope": 12841,
+            "src": "487:157:50",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12769,
+              "nodeType": "Block",
+              "src": "686:27:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 12766,
+                        "name": "key",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12760,
+                        "src": "704:3:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12763,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "692:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12765,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "remove",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10403,
+                      "src": "692:11:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_List_$12008_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer,address)"
+                      }
+                    },
+                    "id": 12767,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "692:16:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 12768,
+                  "nodeType": "ExpressionStatement",
+                  "src": "692:16:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12770,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "remove",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12761,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12760,
+                  "name": "key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12770,
+                  "src": "664:11:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12759,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "664:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "663:13:50"
+            },
+            "returnParameters": {
+              "id": 12762,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "686:0:50"
+            },
+            "scope": 12841,
+            "src": "648:65:50",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12782,
+              "nodeType": "Block",
+              "src": "777:36:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 12779,
+                        "name": "key",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12772,
+                        "src": "804:3:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12777,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "790:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12778,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "contains",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10449,
+                      "src": "790:13:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_struct$_List_$12008_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer,address) view returns (bool)"
+                      }
+                    },
+                    "id": 12780,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "790:18:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 12776,
+                  "id": 12781,
+                  "nodeType": "Return",
+                  "src": "783:25:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12783,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "contains",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12773,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12772,
+                  "name": "key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12783,
+                  "src": "735:11:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12771,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "735:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "734:13:50"
+            },
+            "returnParameters": {
+              "id": 12776,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12775,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12783,
+                  "src": "771:4:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 12774,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "771:4:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "770:6:50"
+            },
+            "scope": 12841,
+            "src": "717:96:50",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12792,
+              "nodeType": "Block",
+              "src": "875:39:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12788,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "888:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12789,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getNumElements",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10534,
+                      "src": "888:19:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_struct$_List_$12008_storage_ptr_$returns$_t_uint256_$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer) view returns (uint256)"
+                      }
+                    },
+                    "id": 12790,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "888:21:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 12787,
+                  "id": 12791,
+                  "nodeType": "Return",
+                  "src": "881:28:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12793,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNumElements",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12784,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "840:2:50"
+            },
+            "returnParameters": {
+              "id": 12787,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12786,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12793,
+                  "src": "866:7:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12785,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "866:7:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "865:9:50"
+            },
+            "scope": 12841,
+            "src": "817:97:50",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12809,
+              "nodeType": "Block",
+              "src": "1066:36:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12805,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "1079:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12806,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getElements",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10645,
+                      "src": "1079:16:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_struct$_List_$12008_storage_ptr_$returns$_t_array$_t_address_$dyn_memory_ptr_$_t_array$_t_uint256_$dyn_memory_ptr_$_t_array$_t_enum$_MedianRelation_$11999_$dyn_memory_ptr_$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer) view returns (address[] memory,uint256[] memory,enum SortedLinkedListWithMedian.MedianRelation[] memory)"
+                      }
+                    },
+                    "id": 12807,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1079:18:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_array$_t_address_$dyn_memory_ptr_$_t_array$_t_uint256_$dyn_memory_ptr_$_t_array$_t_enum$_MedianRelation_$11999_$dyn_memory_ptr_$",
+                      "typeString": "tuple(address[] memory,uint256[] memory,enum SortedLinkedListWithMedian.MedianRelation[] memory)"
+                    }
+                  },
+                  "functionReturnParameters": 12804,
+                  "id": 12808,
+                  "nodeType": "Return",
+                  "src": "1072:25:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12810,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getElements",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12794,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "938:2:50"
+            },
+            "returnParameters": {
+              "id": 12804,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12797,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12810,
+                  "src": "976:16:50",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 12795,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "976:7:50",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 12796,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "976:9:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12800,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12810,
+                  "src": "994:16:50",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 12798,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "994:7:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 12799,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "994:9:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12803,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12810,
+                  "src": "1012:50:50",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_enum$_MedianRelation_$11999_$dyn_memory_ptr",
+                    "typeString": "enum SortedLinkedListWithMedian.MedianRelation[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 12801,
+                      "name": "SortedLinkedListWithMedian.MedianRelation",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 11999,
+                      "src": "1012:41:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_MedianRelation_$11999",
+                        "typeString": "enum SortedLinkedListWithMedian.MedianRelation"
+                      }
+                    },
+                    "id": 12802,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1012:43:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_enum$_MedianRelation_$11999_$dyn_storage_ptr",
+                      "typeString": "enum SortedLinkedListWithMedian.MedianRelation[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "975:88:50"
+            },
+            "scope": 12841,
+            "src": "918:184:50",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12819,
+              "nodeType": "Block",
+              "src": "1154:32:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12815,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "1167:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12816,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getHead",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10494,
+                      "src": "1167:12:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_struct$_List_$12008_storage_ptr_$returns$_t_address_$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer) view returns (address)"
+                      }
+                    },
+                    "id": 12817,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1167:14:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 12814,
+                  "id": 12818,
+                  "nodeType": "Return",
+                  "src": "1160:21:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12820,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "head",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12811,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1119:2:50"
+            },
+            "returnParameters": {
+              "id": 12814,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12813,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12820,
+                  "src": "1145:7:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12812,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1145:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1144:9:50"
+            },
+            "scope": 12841,
+            "src": "1106:80:50",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12829,
+              "nodeType": "Block",
+              "src": "1238:32:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12825,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "1251:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12826,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getTail",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10522,
+                      "src": "1251:12:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_struct$_List_$12008_storage_ptr_$returns$_t_address_$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer) view returns (address)"
+                      }
+                    },
+                    "id": 12827,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1251:14:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 12824,
+                  "id": 12828,
+                  "nodeType": "Return",
+                  "src": "1244:21:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12830,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tail",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12821,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1203:2:50"
+            },
+            "returnParameters": {
+              "id": 12824,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12823,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12830,
+                  "src": "1229:7:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12822,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1229:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1228:9:50"
+            },
+            "scope": 12841,
+            "src": "1190:80:50",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12839,
+              "nodeType": "Block",
+              "src": "1327:34:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12835,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "1340:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12836,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getMedian",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10508,
+                      "src": "1340:14:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_struct$_List_$12008_storage_ptr_$returns$_t_address_$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer) view returns (address)"
+                      }
+                    },
+                    "id": 12837,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1340:16:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 12834,
+                  "id": 12838,
+                  "nodeType": "Return",
+                  "src": "1333:23:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12840,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "medianKey",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12831,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1292:2:50"
+            },
+            "returnParameters": {
+              "id": 12834,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12833,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12840,
+                  "src": "1318:7:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12832,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1318:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1317:9:50"
+            },
+            "scope": 12841,
+            "src": "1274:87:50",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 12842,
+        "src": "146:1217:50"
+      }
+    ],
+    "src": "0:1364:50"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/test/AddressSortedLinkedListWithMedianTest.sol",
+    "exportedSymbols": {
+      "AddressSortedLinkedListWithMedianTest": [
+        12841
+      ]
+    },
+    "id": 12842,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 12709,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:50"
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/linkedlists/AddressSortedLinkedListWithMedian.sol",
+        "file": "../linkedlists/AddressSortedLinkedListWithMedian.sol",
+        "id": 12710,
+        "nodeType": "ImportDirective",
+        "scope": 12842,
+        "sourceUnit": 10647,
+        "src": "26:62:50",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/linkedlists/SortedLinkedListWithMedian.sol",
+        "file": "../linkedlists/SortedLinkedListWithMedian.sol",
+        "id": 12711,
+        "nodeType": "ImportDirective",
+        "scope": 12842,
+        "sourceUnit": 12660,
+        "src": "89:55:50",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 12841,
+        "linearizedBaseContracts": [
+          12841
+        ],
+        "name": "AddressSortedLinkedListWithMedianTest",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 12714,
+            "libraryName": {
+              "contractScope": null,
+              "id": 12712,
+              "name": "AddressSortedLinkedListWithMedian",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 10646,
+              "src": "203:33:50",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AddressSortedLinkedListWithMedian_$10646",
+                "typeString": "library AddressSortedLinkedListWithMedian"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "197:76:50",
+            "typeName": {
+              "contractScope": null,
+              "id": 12713,
+              "name": "SortedLinkedListWithMedian.List",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 12008,
+              "src": "241:31:50",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_List_$12008_storage_ptr",
+                "typeString": "struct SortedLinkedListWithMedian.List"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 12716,
+            "name": "list",
+            "nodeType": "VariableDeclaration",
+            "scope": 12841,
+            "src": "277:44:50",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_List_$12008_storage",
+              "typeString": "struct SortedLinkedListWithMedian.List"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 12715,
+              "name": "SortedLinkedListWithMedian.List",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 12008,
+              "src": "277:31:50",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_List_$12008_storage_ptr",
+                "typeString": "struct SortedLinkedListWithMedian.List"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 12736,
+              "nodeType": "Block",
+              "src": "422:61:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 12730,
+                        "name": "key",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12718,
+                        "src": "440:3:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 12731,
+                        "name": "numerator",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12720,
+                        "src": "445:9:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 12732,
+                        "name": "lesserKey",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12722,
+                        "src": "456:9:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 12733,
+                        "name": "greaterKey",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12724,
+                        "src": "467:10:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12727,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "428:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12729,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "insert",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10387,
+                      "src": "428:11:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_List_$12008_storage_ptr_$_t_address_$_t_uint256_$_t_address_$_t_address_$returns$__$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer,address,uint256,address,address)"
+                      }
+                    },
+                    "id": 12734,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "428:50:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 12735,
+                  "nodeType": "ExpressionStatement",
+                  "src": "428:50:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12737,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "insert",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12725,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12718,
+                  "name": "key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12737,
+                  "src": "342:11:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12717,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "342:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12720,
+                  "name": "numerator",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12737,
+                  "src": "355:17:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12719,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "355:7:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12722,
+                  "name": "lesserKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12737,
+                  "src": "374:17:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12721,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "374:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12724,
+                  "name": "greaterKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12737,
+                  "src": "393:18:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12723,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "393:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "341:71:50"
+            },
+            "returnParameters": {
+              "id": 12726,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "422:0:50"
+            },
+            "scope": 12841,
+            "src": "326:157:50",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12757,
+              "nodeType": "Block",
+              "src": "583:61:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 12751,
+                        "name": "key",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12739,
+                        "src": "601:3:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 12752,
+                        "name": "numerator",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12741,
+                        "src": "606:9:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 12753,
+                        "name": "lesserKey",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12743,
+                        "src": "617:9:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 12754,
+                        "name": "greaterKey",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12745,
+                        "src": "628:10:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12748,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "589:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12750,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "update",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10432,
+                      "src": "589:11:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_List_$12008_storage_ptr_$_t_address_$_t_uint256_$_t_address_$_t_address_$returns$__$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer,address,uint256,address,address)"
+                      }
+                    },
+                    "id": 12755,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "589:50:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 12756,
+                  "nodeType": "ExpressionStatement",
+                  "src": "589:50:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12758,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "update",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12746,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12739,
+                  "name": "key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12758,
+                  "src": "503:11:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12738,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "503:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12741,
+                  "name": "numerator",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12758,
+                  "src": "516:17:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12740,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "516:7:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12743,
+                  "name": "lesserKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12758,
+                  "src": "535:17:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12742,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "535:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12745,
+                  "name": "greaterKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12758,
+                  "src": "554:18:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12744,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "554:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "502:71:50"
+            },
+            "returnParameters": {
+              "id": 12747,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "583:0:50"
+            },
+            "scope": 12841,
+            "src": "487:157:50",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12769,
+              "nodeType": "Block",
+              "src": "686:27:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 12766,
+                        "name": "key",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12760,
+                        "src": "704:3:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12763,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "692:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12765,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "remove",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10403,
+                      "src": "692:11:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_List_$12008_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer,address)"
+                      }
+                    },
+                    "id": 12767,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "692:16:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 12768,
+                  "nodeType": "ExpressionStatement",
+                  "src": "692:16:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12770,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "remove",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12761,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12760,
+                  "name": "key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12770,
+                  "src": "664:11:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12759,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "664:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "663:13:50"
+            },
+            "returnParameters": {
+              "id": 12762,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "686:0:50"
+            },
+            "scope": 12841,
+            "src": "648:65:50",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12782,
+              "nodeType": "Block",
+              "src": "777:36:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 12779,
+                        "name": "key",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12772,
+                        "src": "804:3:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12777,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "790:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12778,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "contains",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10449,
+                      "src": "790:13:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_struct$_List_$12008_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer,address) view returns (bool)"
+                      }
+                    },
+                    "id": 12780,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "790:18:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 12776,
+                  "id": 12781,
+                  "nodeType": "Return",
+                  "src": "783:25:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12783,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "contains",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12773,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12772,
+                  "name": "key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12783,
+                  "src": "735:11:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12771,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "735:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "734:13:50"
+            },
+            "returnParameters": {
+              "id": 12776,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12775,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12783,
+                  "src": "771:4:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 12774,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "771:4:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "770:6:50"
+            },
+            "scope": 12841,
+            "src": "717:96:50",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12792,
+              "nodeType": "Block",
+              "src": "875:39:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12788,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "888:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12789,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getNumElements",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10534,
+                      "src": "888:19:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_struct$_List_$12008_storage_ptr_$returns$_t_uint256_$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer) view returns (uint256)"
+                      }
+                    },
+                    "id": 12790,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "888:21:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 12787,
+                  "id": 12791,
+                  "nodeType": "Return",
+                  "src": "881:28:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12793,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNumElements",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12784,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "840:2:50"
+            },
+            "returnParameters": {
+              "id": 12787,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12786,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12793,
+                  "src": "866:7:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12785,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "866:7:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "865:9:50"
+            },
+            "scope": 12841,
+            "src": "817:97:50",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12809,
+              "nodeType": "Block",
+              "src": "1066:36:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12805,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "1079:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12806,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getElements",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10645,
+                      "src": "1079:16:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_struct$_List_$12008_storage_ptr_$returns$_t_array$_t_address_$dyn_memory_ptr_$_t_array$_t_uint256_$dyn_memory_ptr_$_t_array$_t_enum$_MedianRelation_$11999_$dyn_memory_ptr_$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer) view returns (address[] memory,uint256[] memory,enum SortedLinkedListWithMedian.MedianRelation[] memory)"
+                      }
+                    },
+                    "id": 12807,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1079:18:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_array$_t_address_$dyn_memory_ptr_$_t_array$_t_uint256_$dyn_memory_ptr_$_t_array$_t_enum$_MedianRelation_$11999_$dyn_memory_ptr_$",
+                      "typeString": "tuple(address[] memory,uint256[] memory,enum SortedLinkedListWithMedian.MedianRelation[] memory)"
+                    }
+                  },
+                  "functionReturnParameters": 12804,
+                  "id": 12808,
+                  "nodeType": "Return",
+                  "src": "1072:25:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12810,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getElements",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12794,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "938:2:50"
+            },
+            "returnParameters": {
+              "id": 12804,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12797,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12810,
+                  "src": "976:16:50",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 12795,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "976:7:50",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 12796,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "976:9:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12800,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12810,
+                  "src": "994:16:50",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 12798,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "994:7:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 12799,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "994:9:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 12803,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12810,
+                  "src": "1012:50:50",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_enum$_MedianRelation_$11999_$dyn_memory_ptr",
+                    "typeString": "enum SortedLinkedListWithMedian.MedianRelation[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "contractScope": null,
+                      "id": 12801,
+                      "name": "SortedLinkedListWithMedian.MedianRelation",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 11999,
+                      "src": "1012:41:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_MedianRelation_$11999",
+                        "typeString": "enum SortedLinkedListWithMedian.MedianRelation"
+                      }
+                    },
+                    "id": 12802,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1012:43:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_enum$_MedianRelation_$11999_$dyn_storage_ptr",
+                      "typeString": "enum SortedLinkedListWithMedian.MedianRelation[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "975:88:50"
+            },
+            "scope": 12841,
+            "src": "918:184:50",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12819,
+              "nodeType": "Block",
+              "src": "1154:32:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12815,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "1167:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12816,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getHead",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10494,
+                      "src": "1167:12:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_struct$_List_$12008_storage_ptr_$returns$_t_address_$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer) view returns (address)"
+                      }
+                    },
+                    "id": 12817,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1167:14:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 12814,
+                  "id": 12818,
+                  "nodeType": "Return",
+                  "src": "1160:21:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12820,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "head",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12811,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1119:2:50"
+            },
+            "returnParameters": {
+              "id": 12814,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12813,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12820,
+                  "src": "1145:7:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12812,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1145:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1144:9:50"
+            },
+            "scope": 12841,
+            "src": "1106:80:50",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12829,
+              "nodeType": "Block",
+              "src": "1238:32:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12825,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "1251:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12826,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getTail",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10522,
+                      "src": "1251:12:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_struct$_List_$12008_storage_ptr_$returns$_t_address_$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer) view returns (address)"
+                      }
+                    },
+                    "id": 12827,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1251:14:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 12824,
+                  "id": 12828,
+                  "nodeType": "Return",
+                  "src": "1244:21:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12830,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tail",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12821,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1203:2:50"
+            },
+            "returnParameters": {
+              "id": 12824,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12823,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12830,
+                  "src": "1229:7:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12822,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1229:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1228:9:50"
+            },
+            "scope": 12841,
+            "src": "1190:80:50",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12839,
+              "nodeType": "Block",
+              "src": "1327:34:50",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12835,
+                        "name": "list",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12716,
+                        "src": "1340:4:50",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_List_$12008_storage",
+                          "typeString": "struct SortedLinkedListWithMedian.List storage ref"
+                        }
+                      },
+                      "id": 12836,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getMedian",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10508,
+                      "src": "1340:14:50",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_struct$_List_$12008_storage_ptr_$returns$_t_address_$bound_to$_t_struct$_List_$12008_storage_ptr_$",
+                        "typeString": "function (struct SortedLinkedListWithMedian.List storage pointer) view returns (address)"
+                      }
+                    },
+                    "id": 12837,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1340:16:50",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 12834,
+                  "id": 12838,
+                  "nodeType": "Return",
+                  "src": "1333:23:50"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12840,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "medianKey",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12831,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1292:2:50"
+            },
+            "returnParameters": {
+              "id": 12834,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12833,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12840,
+                  "src": "1318:7:50",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 12832,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1318:7:50",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1317:9:50"
+            },
+            "scope": 12841,
+            "src": "1274:87:50",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 12842,
+        "src": "146:1217:50"
+      }
+    ],
+    "src": "0:1364:50"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.13+commit.5b0b510c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2022-05-06T03:53:12.785Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

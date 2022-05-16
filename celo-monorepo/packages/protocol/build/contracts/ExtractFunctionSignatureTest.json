@@ -1,0 +1,466 @@
+{
+  "contractName": "ExtractFunctionSignatureTest",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "input",
+          "type": "bytes"
+        }
+      ],
+      "name": "extractFunctionSignature",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.13+commit.5b0b510c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"input\",\"type\":\"bytes\"}],\"name\":\"extractFunctionSignature\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/test/ExtractFunctionSignatureTest.sol\":\"ExtractFunctionSignatureTest\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/ExtractFunctionSignature.sol\":{\"keccak256\":\"0x3b56d6895c40c94dac019ad89bb4bd362e9deb0bbb2c46b0b1e23bd23c042e79\",\"urls\":[\"bzz-raw://5e3ae8a27630221a8065e76d86a11e29aa9d438e32f0aed42a5a3b76da8debc1\",\"dweb:/ipfs/QmZMC7xyQn2C5dThvDGXddMrgouQgjeenzsd4M3FNf3ZAV\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/test/ExtractFunctionSignatureTest.sol\":{\"keccak256\":\"0xbeb5c0f5a46d099c8b0d5e421049dc7305862cb08cda97a7aabd9fa1671cc5a0\",\"urls\":[\"bzz-raw://63a5b7fb96486efc9d57148a0548b934bacd3da91a46a8240f47bed3d590fe91\",\"dweb:/ipfs/QmaUezUUVXkCKWyaPoBXTzPnAUxs9hEbRGpWRcoEf48tDF\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506102e1806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c806348c562a514610030575b600080fd5b6100e96004803603602081101561004657600080fd5b810190808035906020019064010000000081111561006357600080fd5b82018360208201111561007557600080fd5b8035906020019184600183028401116401000000008311171561009757600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929050505061013d565b60405180827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b60006101488261014f565b9050919050565b600060188260038151811061016057fe5b602001015160f81c60f81b7effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916901c6010836002815181106101bd57fe5b602001015160f81c60f81b7effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916901c60088460018151811061021a57fe5b602001015160f81c60f81b7effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916901c8460008151811061027557fe5b602001015160f81c60f81b7effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916171717905091905056fea265627a7a7231582027c2c6d35d6b6aa6651d18e70fe6a3978e3fb2ee17c5a9aec1c5dc5ff0ad380064736f6c634300050d0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c806348c562a514610030575b600080fd5b6100e96004803603602081101561004657600080fd5b810190808035906020019064010000000081111561006357600080fd5b82018360208201111561007557600080fd5b8035906020019184600183028401116401000000008311171561009757600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929050505061013d565b60405180827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b60006101488261014f565b9050919050565b600060188260038151811061016057fe5b602001015160f81c60f81b7effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916901c6010836002815181106101bd57fe5b602001015160f81c60f81b7effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916901c60088460018151811061021a57fe5b602001015160f81c60f81b7effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916901c8460008151811061027557fe5b602001015160f81c60f81b7effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916171717905091905056fea265627a7a7231582027c2c6d35d6b6aa6651d18e70fe6a3978e3fb2ee17c5a9aec1c5dc5ff0ad380064736f6c634300050d0032",
+  "sourceMap": "69:238:51:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:238:51;;;;;;;",
+  "deployedSourceMap": "69:238:51:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:238:51;;;;;;;;;;;;;;;;;;;148:157;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;148:157:51;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;148:157:51;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;148:157:51;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;148:157:51;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;148:157:51;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;223:6;244:56;294:5;244:49;:56::i;:::-;237:63;;148:157;;;:::o;215:219:5:-;292:6;425:2;412:5;418:1;412:8;;;;;;;;;;;;;;;;405:16;;;:22;;;;;392:2;379:5;385:1;379:8;;;;;;;;;;;;;;;;372:16;;;:22;;;;;360:1;347:5;353:1;347:8;;;;;;;;;;;;;;;;340:16;;;:21;;;;;321:5;327:1;321:8;;;;;;;;;;;;;;;;314:16;;;:48;:81;:114;306:123;;215:219;;;:::o",
+  "source": "pragma solidity ^0.5.13;\n\nimport \"../ExtractFunctionSignature.sol\";\n\ncontract ExtractFunctionSignatureTest {\n  // using ExtractFunctionSignature;\n  function extractFunctionSignature(bytes memory input) public pure returns (bytes4) {\n    return ExtractFunctionSignature.extractFunctionSignature(input);\n  }\n}\n",
+  "sourcePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/test/ExtractFunctionSignatureTest.sol",
+  "ast": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/test/ExtractFunctionSignatureTest.sol",
+    "exportedSymbols": {
+      "ExtractFunctionSignatureTest": [
+        12858
+      ]
+    },
+    "id": 12859,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 12843,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:51"
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/ExtractFunctionSignature.sol",
+        "file": "../ExtractFunctionSignature.sol",
+        "id": 12844,
+        "nodeType": "ImportDirective",
+        "scope": 12859,
+        "sourceUnit": 2906,
+        "src": "26:41:51",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 12858,
+        "linearizedBaseContracts": [
+          12858
+        ],
+        "name": "ExtractFunctionSignatureTest",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 12856,
+              "nodeType": "Block",
+              "src": "231:74:51",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 12853,
+                        "name": "input",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12846,
+                        "src": "294:5:51",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12851,
+                        "name": "ExtractFunctionSignature",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2905,
+                        "src": "244:24:51",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_ExtractFunctionSignature_$2905_$",
+                          "typeString": "type(library ExtractFunctionSignature)"
+                        }
+                      },
+                      "id": 12852,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "extractFunctionSignature",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 2904,
+                      "src": "244:49:51",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes4_$",
+                        "typeString": "function (bytes memory) pure returns (bytes4)"
+                      }
+                    },
+                    "id": 12854,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "244:56:51",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "functionReturnParameters": 12850,
+                  "id": 12855,
+                  "nodeType": "Return",
+                  "src": "237:63:51"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12857,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "extractFunctionSignature",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12847,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12846,
+                  "name": "input",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12857,
+                  "src": "182:18:51",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 12845,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "182:5:51",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "181:20:51"
+            },
+            "returnParameters": {
+              "id": 12850,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12849,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12857,
+                  "src": "223:6:51",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 12848,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "223:6:51",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "222:8:51"
+            },
+            "scope": 12858,
+            "src": "148:157:51",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 12859,
+        "src": "69:238:51"
+      }
+    ],
+    "src": "0:308:51"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/test/ExtractFunctionSignatureTest.sol",
+    "exportedSymbols": {
+      "ExtractFunctionSignatureTest": [
+        12858
+      ]
+    },
+    "id": 12859,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 12843,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:51"
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/ExtractFunctionSignature.sol",
+        "file": "../ExtractFunctionSignature.sol",
+        "id": 12844,
+        "nodeType": "ImportDirective",
+        "scope": 12859,
+        "sourceUnit": 2906,
+        "src": "26:41:51",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 12858,
+        "linearizedBaseContracts": [
+          12858
+        ],
+        "name": "ExtractFunctionSignatureTest",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 12856,
+              "nodeType": "Block",
+              "src": "231:74:51",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 12853,
+                        "name": "input",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12846,
+                        "src": "294:5:51",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12851,
+                        "name": "ExtractFunctionSignature",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2905,
+                        "src": "244:24:51",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_ExtractFunctionSignature_$2905_$",
+                          "typeString": "type(library ExtractFunctionSignature)"
+                        }
+                      },
+                      "id": 12852,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "extractFunctionSignature",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 2904,
+                      "src": "244:49:51",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes4_$",
+                        "typeString": "function (bytes memory) pure returns (bytes4)"
+                      }
+                    },
+                    "id": 12854,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "244:56:51",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "functionReturnParameters": 12850,
+                  "id": 12855,
+                  "nodeType": "Return",
+                  "src": "237:63:51"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12857,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "extractFunctionSignature",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12847,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12846,
+                  "name": "input",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12857,
+                  "src": "182:18:51",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 12845,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "182:5:51",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "181:20:51"
+            },
+            "returnParameters": {
+              "id": 12850,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12849,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12857,
+                  "src": "223:6:51",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 12848,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "223:6:51",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "222:8:51"
+            },
+            "scope": 12858,
+            "src": "148:157:51",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 12859,
+        "src": "69:238:51"
+      }
+    ],
+    "src": "0:308:51"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.13+commit.5b0b510c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2022-05-06T03:53:12.788Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

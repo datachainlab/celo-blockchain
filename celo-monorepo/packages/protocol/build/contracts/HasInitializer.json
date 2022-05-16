@@ -1,0 +1,560 @@
+{
+  "contractName": "HasInitializer",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "initialized",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "x",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_x",
+          "type": "uint256"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.13+commit.5b0b510c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_x\",\"type\":\"uint256\"}],\"name\":\"initialize\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"initialized\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"x\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/test/HasInitializer.sol\":\"HasInitializer\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/Initializable.sol\":{\"keccak256\":\"0xad98825b5d3181f4ce2d2dbe84adeb0cd7960fd80fafb0813539d6d96ba42ab8\",\"urls\":[\"bzz-raw://f76468328c78b80eeaaaadb7b186e41da4a34134446fe11bb707106322b8e32f\",\"dweb:/ipfs/QmNyjyVjPX1GKFibDcJBJyZQ57nhusG3DhPjAGnY7iaU39\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/test/HasInitializer.sol\":{\"keccak256\":\"0x4352d9ecd98464aaae986d0d80a035dedd9bd2935b726277185d05b9cb2e6eea\",\"urls\":[\"bzz-raw://d90e1a711b5f6b56245440558356721d211ad220b39127f7acf370100e6eb1d4\",\"dweb:/ipfs/QmeRxQJPUfoEHnqZGf1FqG43APM3vphTaNq2mpLmbHdoH5\"]}},\"version\":1}",
+  "bytecode": "0x60806040526001806100265760016000806101000a81548160ff0219169083151502179055505b506101a7806100366000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80630c55699c14610046578063158ef93e14610064578063fe4b84df14610086575b600080fd5b61004e6100b4565b6040518082815260200191505060405180910390f35b61006c6100ba565b604051808215151515815260200191505060405180910390f35b6100b26004803603602081101561009c57600080fd5b81019080803590602001909291905050506100cc565b005b60015481565b6000809054906101000a900460ff1681565b6000809054906101000a900460ff161561014e576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601c8152602001807f636f6e747261637420616c726561647920696e697469616c697a65640000000081525060200191505060405180910390fd5b60016000806101000a81548160ff021916908315150217905550806001819055505056fea265627a7a7231582056cf63af41b243dc604c50dfe7c0843e5c11b6ef6c8a307c84c96fcdf026e42364736f6c634300050d0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80630c55699c14610046578063158ef93e14610064578063fe4b84df14610086575b600080fd5b61004e6100b4565b6040518082815260200191505060405180910390f35b61006c6100ba565b604051808215151515815260200191505060405180910390f35b6100b26004803603602081101561009c57600080fd5b81019080803590602001909291905050506100cc565b005b60015481565b6000809054906101000a900460ff1681565b6000809054906101000a900460ff161561014e576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601c8152602001807f636f6e747261637420616c726561647920696e697469616c697a65640000000081525060200191505060405180910390fd5b60016000806101000a81548160ff021916908315150217905550806001819055505056fea265627a7a7231582056cf63af41b243dc604c50dfe7c0843e5c11b6ef6c8a307c84c96fcdf026e42364736f6c634300050d0032",
+  "sourceMap": "58:144:55:-;;;99:4;135:17:12;130:57;;176:4;162:11;;:18;;;;;;;;;;;;;;;;;;130:57;81:110;58:144:55;;;;;;",
+  "deployedSourceMap": "58:144:55:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;58:144:55;;;;;;;;;;;;;;;;;;;;;;;;;;;;;109:16;;;:::i;:::-;;;;;;;;;;;;;;;;;;;53:23:12;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;130:70:55;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;130:70:55;;;;;;;;;;;;;;;;;:::i;:::-;;109:16;;;;:::o;53:23:12:-;;;;;;;;;;;;;:::o;130:70:55:-;233:11:12;;;;;;;;;;;232:12;224:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;297:4;283:11;;:18;;;;;;;;;;;;;;;;;;193:2:55;189:1;:6;;;;130:70;:::o",
+  "source": "pragma solidity ^0.5.13;\n\nimport \"../Initializable.sol\";\n\ncontract HasInitializer is Initializable(true) {\n  uint256 public x;\n\n  function initialize(uint256 _x) external initializer {\n    x = _x;\n  }\n}\n",
+  "sourcePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/test/HasInitializer.sol",
+  "ast": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/test/HasInitializer.sol",
+    "exportedSymbols": {
+      "HasInitializer": [
+        13170
+      ]
+    },
+    "id": 13171,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13151,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:55"
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/Initializable.sol",
+        "file": "../Initializable.sol",
+        "id": 13152,
+        "nodeType": "ImportDirective",
+        "scope": 13171,
+        "sourceUnit": 4662,
+        "src": "26:30:55",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": [
+              {
+                "argumentTypes": null,
+                "hexValue": "74727565",
+                "id": 13154,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "bool",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "99:4:55",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "value": "true"
+              }
+            ],
+            "baseName": {
+              "contractScope": null,
+              "id": 13153,
+              "name": "Initializable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4661,
+              "src": "85:13:55",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Initializable_$4661",
+                "typeString": "contract Initializable"
+              }
+            },
+            "id": 13155,
+            "nodeType": "InheritanceSpecifier",
+            "src": "85:19:55"
+          }
+        ],
+        "contractDependencies": [
+          4661
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 13170,
+        "linearizedBaseContracts": [
+          13170,
+          4661
+        ],
+        "name": "HasInitializer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 13157,
+            "name": "x",
+            "nodeType": "VariableDeclaration",
+            "scope": 13170,
+            "src": "109:16:55",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 13156,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "109:7:55",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 13168,
+              "nodeType": "Block",
+              "src": "183:17:55",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 13166,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 13164,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13157,
+                      "src": "189:1:55",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 13165,
+                      "name": "_x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13159,
+                      "src": "193:2:55",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "189:6:55",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 13167,
+                  "nodeType": "ExpressionStatement",
+                  "src": "189:6:55"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 13169,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 13162,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 13161,
+                  "name": "initializer",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 4660,
+                  "src": "171:11:55",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "171:11:55"
+              }
+            ],
+            "name": "initialize",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13160,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13159,
+                  "name": "_x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13169,
+                  "src": "150:10:55",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13158,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "150:7:55",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "149:12:55"
+            },
+            "returnParameters": {
+              "id": 13163,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "183:0:55"
+            },
+            "scope": 13170,
+            "src": "130:70:55",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13171,
+        "src": "58:144:55"
+      }
+    ],
+    "src": "0:203:55"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/test/HasInitializer.sol",
+    "exportedSymbols": {
+      "HasInitializer": [
+        13170
+      ]
+    },
+    "id": 13171,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13151,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:55"
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/Initializable.sol",
+        "file": "../Initializable.sol",
+        "id": 13152,
+        "nodeType": "ImportDirective",
+        "scope": 13171,
+        "sourceUnit": 4662,
+        "src": "26:30:55",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": [
+              {
+                "argumentTypes": null,
+                "hexValue": "74727565",
+                "id": 13154,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "bool",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "99:4:55",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "value": "true"
+              }
+            ],
+            "baseName": {
+              "contractScope": null,
+              "id": 13153,
+              "name": "Initializable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4661,
+              "src": "85:13:55",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Initializable_$4661",
+                "typeString": "contract Initializable"
+              }
+            },
+            "id": 13155,
+            "nodeType": "InheritanceSpecifier",
+            "src": "85:19:55"
+          }
+        ],
+        "contractDependencies": [
+          4661
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 13170,
+        "linearizedBaseContracts": [
+          13170,
+          4661
+        ],
+        "name": "HasInitializer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 13157,
+            "name": "x",
+            "nodeType": "VariableDeclaration",
+            "scope": 13170,
+            "src": "109:16:55",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 13156,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "109:7:55",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 13168,
+              "nodeType": "Block",
+              "src": "183:17:55",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 13166,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 13164,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13157,
+                      "src": "189:1:55",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 13165,
+                      "name": "_x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13159,
+                      "src": "193:2:55",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "189:6:55",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 13167,
+                  "nodeType": "ExpressionStatement",
+                  "src": "189:6:55"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 13169,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 13162,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 13161,
+                  "name": "initializer",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 4660,
+                  "src": "171:11:55",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "171:11:55"
+              }
+            ],
+            "name": "initialize",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13160,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13159,
+                  "name": "_x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13169,
+                  "src": "150:10:55",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13158,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "150:7:55",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "149:12:55"
+            },
+            "returnParameters": {
+              "id": 13163,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "183:0:55"
+            },
+            "scope": 13170,
+            "src": "130:70:55",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13171,
+        "src": "58:144:55"
+      }
+    ],
+    "src": "0:203:55"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.13+commit.5b0b510c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2022-05-06T03:53:12.796Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

@@ -1,0 +1,1786 @@
+{
+  "contractName": "ProposalsTest",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "networkWeight",
+          "type": "uint256"
+        }
+      ],
+      "name": "setNetworkWeight",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "yes",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "no",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "abstain",
+          "type": "uint256"
+        }
+      ],
+      "name": "setVotes",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "criticalBaseline",
+          "type": "uint256"
+        }
+      ],
+      "name": "getSupportWithQuorumPadding",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.13+commit.5b0b510c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"criticalBaseline\",\"type\":\"uint256\"}],\"name\":\"getSupportWithQuorumPadding\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"networkWeight\",\"type\":\"uint256\"}],\"name\":\"setNetworkWeight\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"yes\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"no\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"abstain\",\"type\":\"uint256\"}],\"name\":\"setVotes\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/test/ProposalsTest.sol\":\"ProposalsTest\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/FixidityLib.sol\":{\"keccak256\":\"0x2f98fa3b3454621817917bae2830806858a96c9457be2c5b6e0bed5b35aaaba3\",\"urls\":[\"bzz-raw://b6bf5cf79debe02093777cc9ddef4616dedd041ccc2618c43ea91c90afd97df6\",\"dweb:/ipfs/QmXonY3FkVy2jnQvLkgDi4LcaniS5DVZ1zpRZecWKWy9Ro\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/Proposals.sol\":{\"keccak256\":\"0xf31f8b1d8d19b6fb8461e7ecb7c476623b90fbe055615f38bdbd2ac31d1cf1c2\",\"urls\":[\"bzz-raw://ee4ecd4c5a02d1b96cac2fb33789d0857b4d86564e57671301908efe045ccaf0\",\"dweb:/ipfs/QmY6Y1j4EzrApBdZPRF7fpuxTBKt7fVH5zGHMrPgu1DHmW\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/test/ProposalsTest.sol\":{\"keccak256\":\"0xefaae6a17da425982a29475527c56c86c5065f77039c7f98617df21874fed116\",\"urls\":[\"bzz-raw://ae030150b2f6c20b041ae8e425ffeacc1d656a04f66b074be82dc17a83b09081\",\"dweb:/ipfs/QmWbAQmCMxi84PbdHRrA1mkZ8nSjoDnDTDjYqqyXXxeUhZ\"]},\"openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076\",\"urls\":[\"bzz-raw://31113152e1ddb78fe7a4197f247591ca894e93f916867beb708d8e747b6cc74f\",\"dweb:/ipfs/QmbZaJyXdpsYGykVhHH9qpVGQg9DGCxE2QufbCUy3daTgq\"]},\"openzeppelin-solidity/contracts/utils/Address.sol\":{\"keccak256\":\"0x1a8e5072509c5ea7365eb1d48030b9be865140c8fb779968da0a459a0e174a11\",\"urls\":[\"bzz-raw://03335b7b07c7c8c8d613cfdd8ec39a0b5ec133ee510bf2fe6cc5a496767bef4b\",\"dweb:/ipfs/Qmebp4nzPja645c9yXSdJkGq96oU3am3LUnG2K3R7XxyKf\"]},\"solidity-bytes-utils/contracts/BytesLib.sol\":{\"keccak256\":\"0xdd38cd94f336b6f3a7ab680b0c1c1b8b61af23a0197d80ee9c15ea883dab486a\",\"urls\":[\"bzz-raw://fb2eb40bfb1933f1ac335ea3e4c0a09a63902a912f194afc2cda28191a55a141\",\"dweb:/ipfs/Qmf69Z4eueuUDJkJy18aZn7wXyBUmqZ7xCp8U1QRGajDwF\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610c67806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80631d3bee681461004657806347dffa9314610074578063f2ed1728146100b6575b600080fd5b6100726004803603602081101561005c57600080fd5b81019080803590602001909291905050506100f8565b005b6100b46004803603606081101561008a57600080fd5b81019080803590602001909291908035906020019092919080359060200190929190505050610105565b005b6100e2600480360360208110156100cc57600080fd5b8101908080359060200190929190505050610131565b6040518082815260200191505060405180910390f35b8060006008018190555050565b826000600301600001819055508160006003016001018190555080600060030160020181905550505050565b60006101576101526101428461015e565b600061017c90919063ffffffff16565b61026b565b9050919050565b610166610be9565b6040518060200160405280838152509050919050565b610184610be9565b60008360030160000154905060008114156101ab576101a36000610279565b915050610265565b60008460030160010154905060006101e586600301600201546101d7848661030390919063ffffffff16565b61030390919063ffffffff16565b9050600061021061020b6101fc8960080154610279565b8861038b90919063ffffffff16565b6107ea565b9050818111156102425761023f610230838361080b90919063ffffffff16565b8461030390919063ffffffff16565b92505b61025e84610259858761030390919063ffffffff16565b610855565b9450505050505b92915050565b600081600001519050919050565b610281610be9565b610289610897565b8211156102e1576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401808060200182810382526036815260200180610bfd6036913960400191505060405180910390fd5b604051806020016040528069d3c21bcecceda100000084028152509050919050565b600080828401905083811015610381576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601b8152602001807f536166654d6174683a206164646974696f6e206f766572666c6f77000000000081525060200191505060405180910390fd5b8091505092915050565b610393610be9565b6000836000015114806103aa575060008260000151145b156103c6576040518060200160405280600081525090506107e4565b69d3c21bcecceda1000000826000015114156103e4578290506107e4565b69d3c21bcecceda100000083600001511415610402578190506107e4565b600069d3c21bcecceda1000000610418856108b6565b600001518161042357fe5b0490506000610431856108ed565b600001519050600069d3c21bcecceda100000061044d866108b6565b600001518161045857fe5b0490506000610466866108ed565b60000151905060008285029050600085146104fa578285828161048557fe5b04146104f9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6f766572666c6f7720783179312064657465637465640000000000000000000081525060200191505060405180910390fd5b5b600069d3c21bcecceda1000000820290506000821461059c5769d3c21bcecceda100000082828161052757fe5b041461059b576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f6f766572666c6f772078317931202a206669786564312064657465637465640081525060200191505060405180910390fd5b5b809150600084860290506000861461062d57848682816105b857fe5b041461062c576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6f766572666c6f7720783279312064657465637465640000000000000000000081525060200191505060405180910390fd5b5b60008488029050600088146106bb578488828161064657fe5b04146106ba576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6f766572666c6f7720783179322064657465637465640000000000000000000081525060200191505060405180910390fd5b5b6106c361092a565b87816106cb57fe5b0496506106d661092a565b85816106de57fe5b049450600085880290506000881461076f57858882816106fa57fe5b041461076e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6f766572666c6f7720783279322064657465637465640000000000000000000081525060200191505060405180910390fd5b5b610777610be9565b60405180602001604052808781525090506107a081604051806020016040528087815250610937565b90506107ba81604051806020016040528086815250610937565b90506107d481604051806020016040528085815250610937565b9050809a50505050505050505050505b92915050565b600069d3c21bcecceda100000082600001518161080357fe5b049050919050565b600061084d83836040518060400160405280601e81526020017f536166654d6174683a207375627472616374696f6e206f766572666c6f7700008152506109e0565b905092915050565b61085d610be9565b610865610be9565b61086e84610279565b9050610878610be9565b61088184610279565b905061088d8282610aa0565b9250505092915050565b60007601357c299a88ea76a58924d52ce4f26a85af186c2b9e74905090565b6108be610be9565b604051806020016040528069d3c21bcecceda1000000808560000151816108e157fe5b04028152509050919050565b6108f5610be9565b604051806020016040528069d3c21bcecceda10000008085600001518161091857fe5b04028460000151038152509050919050565b600064e8d4a51000905090565b61093f610be9565b60008260000151846000015101905083600001518110156109c8576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260158152602001807f616464206f766572666c6f77206465746563746564000000000000000000000081525060200191505060405180910390fd5b60405180602001604052808281525091505092915050565b6000838311158290610a8d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825283818151815260200191508051906020019080838360005b83811015610a52578082015181840152602081019050610a37565b50505050905090810190601f168015610a7f5780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b5060008385039050809150509392505050565b610aa8610be9565b600082600001511415610b23576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260118152602001807f63616e277420646976696465206279203000000000000000000000000000000081525060200191505060405180910390fd5b600069d3c21bcecceda10000008460000151029050836000015169d3c21bcecceda10000008281610b5057fe5b0414610bc4576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260128152602001807f6f766572666c6f7720617420646976696465000000000000000000000000000081525060200191505060405180910390fd5b604051806020016040528084600001518381610bdc57fe5b0481525091505092915050565b604051806020016040528060008152509056fe63616e277420637265617465206669786964697479206e756d626572206c6172676572207468616e206d61784e657746697865642829a265627a7a72315820539a73ac7fd7c14ef65c683ccaf84dbacb456111ef5af7e20d680bf5428dd68264736f6c634300050d0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80631d3bee681461004657806347dffa9314610074578063f2ed1728146100b6575b600080fd5b6100726004803603602081101561005c57600080fd5b81019080803590602001909291905050506100f8565b005b6100b46004803603606081101561008a57600080fd5b81019080803590602001909291908035906020019092919080359060200190929190505050610105565b005b6100e2600480360360208110156100cc57600080fd5b8101908080359060200190929190505050610131565b6040518082815260200191505060405180910390f35b8060006008018190555050565b826000600301600001819055508160006003016001018190555080600060030160020181905550505050565b60006101576101526101428461015e565b600061017c90919063ffffffff16565b61026b565b9050919050565b610166610be9565b6040518060200160405280838152509050919050565b610184610be9565b60008360030160000154905060008114156101ab576101a36000610279565b915050610265565b60008460030160010154905060006101e586600301600201546101d7848661030390919063ffffffff16565b61030390919063ffffffff16565b9050600061021061020b6101fc8960080154610279565b8861038b90919063ffffffff16565b6107ea565b9050818111156102425761023f610230838361080b90919063ffffffff16565b8461030390919063ffffffff16565b92505b61025e84610259858761030390919063ffffffff16565b610855565b9450505050505b92915050565b600081600001519050919050565b610281610be9565b610289610897565b8211156102e1576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401808060200182810382526036815260200180610bfd6036913960400191505060405180910390fd5b604051806020016040528069d3c21bcecceda100000084028152509050919050565b600080828401905083811015610381576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601b8152602001807f536166654d6174683a206164646974696f6e206f766572666c6f77000000000081525060200191505060405180910390fd5b8091505092915050565b610393610be9565b6000836000015114806103aa575060008260000151145b156103c6576040518060200160405280600081525090506107e4565b69d3c21bcecceda1000000826000015114156103e4578290506107e4565b69d3c21bcecceda100000083600001511415610402578190506107e4565b600069d3c21bcecceda1000000610418856108b6565b600001518161042357fe5b0490506000610431856108ed565b600001519050600069d3c21bcecceda100000061044d866108b6565b600001518161045857fe5b0490506000610466866108ed565b60000151905060008285029050600085146104fa578285828161048557fe5b04146104f9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6f766572666c6f7720783179312064657465637465640000000000000000000081525060200191505060405180910390fd5b5b600069d3c21bcecceda1000000820290506000821461059c5769d3c21bcecceda100000082828161052757fe5b041461059b576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f6f766572666c6f772078317931202a206669786564312064657465637465640081525060200191505060405180910390fd5b5b809150600084860290506000861461062d57848682816105b857fe5b041461062c576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6f766572666c6f7720783279312064657465637465640000000000000000000081525060200191505060405180910390fd5b5b60008488029050600088146106bb578488828161064657fe5b04146106ba576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6f766572666c6f7720783179322064657465637465640000000000000000000081525060200191505060405180910390fd5b5b6106c361092a565b87816106cb57fe5b0496506106d661092a565b85816106de57fe5b049450600085880290506000881461076f57858882816106fa57fe5b041461076e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260168152602001807f6f766572666c6f7720783279322064657465637465640000000000000000000081525060200191505060405180910390fd5b5b610777610be9565b60405180602001604052808781525090506107a081604051806020016040528087815250610937565b90506107ba81604051806020016040528086815250610937565b90506107d481604051806020016040528085815250610937565b9050809a50505050505050505050505b92915050565b600069d3c21bcecceda100000082600001518161080357fe5b049050919050565b600061084d83836040518060400160405280601e81526020017f536166654d6174683a207375627472616374696f6e206f766572666c6f7700008152506109e0565b905092915050565b61085d610be9565b610865610be9565b61086e84610279565b9050610878610be9565b61088184610279565b905061088d8282610aa0565b9250505092915050565b60007601357c299a88ea76a58924d52ce4f26a85af186c2b9e74905090565b6108be610be9565b604051806020016040528069d3c21bcecceda1000000808560000151816108e157fe5b04028152509050919050565b6108f5610be9565b604051806020016040528069d3c21bcecceda10000008085600001518161091857fe5b04028460000151038152509050919050565b600064e8d4a51000905090565b61093f610be9565b60008260000151846000015101905083600001518110156109c8576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260158152602001807f616464206f766572666c6f77206465746563746564000000000000000000000081525060200191505060405180910390fd5b60405180602001604052808281525091505092915050565b6000838311158290610a8d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825283818151815260200191508051906020019080838360005b83811015610a52578082015181840152602081019050610a37565b50505050905090810190601f168015610a7f5780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b5060008385039050809150509392505050565b610aa8610be9565b600082600001511415610b23576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260118152602001807f63616e277420646976696465206279203000000000000000000000000000000081525060200191505060405180910390fd5b600069d3c21bcecceda10000008460000151029050836000015169d3c21bcecceda10000008281610b5057fe5b0414610bc4576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260128152602001807f6f766572666c6f7720617420646976696465000000000000000000000000000081525060200191505060405180910390fd5b604051806020016040528084600001518381610bdc57fe5b0481525091505092915050565b604051806020016040528060008152509056fe63616e277420637265617465206669786964697479206e756d626572206c6172676572207468616e206d61784e657746697865642829a265627a7a72315820539a73ac7fd7c14ef65c683ccaf84dbacb456111ef5af7e20d680bf5428dd68264736f6c634300050d0032",
+  "sourceMap": "93:608:103:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;93:608:103;;;;;;;",
+  "deployedSourceMap": "93:608:103:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;93:608:103;;;;;;;;;;;;;;;;;;;;;;;;;;;;;203:107;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;203:107:103;;;;;;;;;;;;;;;;;:::i;:::-;;314:170;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;314:170:103;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;488:211;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;488:211:103;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;203:107;292:13;267:8;:22;;:38;;;;203:107;:::o;314:170::-;410:3;389:8;:14;;:18;;:24;;;;439:2;419:8;:14;;:17;;:22;;;;472:7;447:8;:14;;:22;;:32;;;;314:170;;;:::o;488:211::-;574:7;602:92;621:72;658:34;675:16;658;:34::i;:::-;621:8;:36;;:72;;;;:::i;:::-;602:18;:92::i;:::-;589:105;;488:211;;;:::o;1502:94:7:-;1550:15;;:::i;:::-;1580:11;;;;;;;;1589:1;1580:11;;;1573:18;;1502:94;;;:::o;6740:693:70:-;6875:27;;:::i;:::-;6910:16;6929:8;:14;;:18;;;6910:37;;6969:1;6957:8;:13;6953:64;;;6987:23;7008:1;6987:20;:23::i;:::-;6980:30;;;;;6953:64;7022:15;7040:8;:14;;:17;;;7022:35;;7063:18;7084:49;7110:8;:14;;:22;;;7084:21;7097:7;7084:8;:12;;:21;;;;:::i;:::-;:25;;:49;;;;:::i;:::-;7063:70;;7139:21;7163:87;:68;7186:44;7207:8;:22;;;7186:20;:44::i;:::-;7163:6;:22;;:68;;;;:::i;:::-;:85;:87::i;:::-;7139:111;;7276:10;7260:13;:26;7256:99;;;7306:42;7318:29;7336:10;7318:13;:17;;:29;;;;:::i;:::-;7306:7;:11;;:42;;;;:::i;:::-;7296:52;;7256:99;7367:61;7396:8;7406:21;7419:7;7406:8;:12;;:21;;;;:::i;:::-;7367:28;:61::i;:::-;7360:68;;;;;;6740:693;;;;;:::o;1674:92:7:-;1732:7;1754:1;:7;;;1747:14;;1674:92;;;:::o;2547:203::-;2599:15;;:::i;:::-;2635:13;:11;:13::i;:::-;2630:1;:18;;2622:85;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2720:25;;;;;;;;996;2729:1;:15;2720:25;;;2713:32;;2547:203;;;:::o;834:176:153:-;892:7;911:9;927:1;923;:5;911:17;;951:1;946;:6;;938:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1002:1;995:8;;;834:176;;;;:::o;6206:1636:7:-;6285:15;;:::i;:::-;6323:1;6312;:7;;;:12;:28;;;;6339:1;6328;:7;;;:12;6312:28;6308:52;;;6349:11;;;;;;;;6358:1;6349:11;;;6342:18;;;;6308:52;996:25;6370:1;:7;;;:22;6366:36;;;6401:1;6394:8;;;;6366:36;996:25;6412:1;:7;;;:22;6408:36;;;6443:1;6436:8;;;;6408:36;6533:10;996:25;6546:10;6554:1;6546:7;:10::i;:::-;:16;;;:30;;;;;;6533:43;;6582:10;6595:13;6606:1;6595:10;:13::i;:::-;:19;;;6582:32;;6620:10;996:25;6633:10;6641:1;6633:7;:10::i;:::-;:16;;;:30;;;;;;6620:43;;6669:10;6682:13;6693:1;6682:10;:13::i;:::-;:19;;;6669:32;;6785:12;6805:2;6800;:7;6785:22;;6823:1;6817:2;:7;6813:63;;6847:2;6841;6834:4;:9;;;;;;:15;6826:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6813:63;6975:18;996:25;6996:4;:18;6975:39;;7032:1;7024:4;:9;7020:91;;996:25;7056:4;7043:10;:17;;;;;;:32;7035:76;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7020:91;7124:10;7117:17;;7141:12;7161:2;7156;:7;7141:22;;7179:1;7173:2;:7;7169:63;;7203:2;7197;7190:4;:9;;;;;;:15;7182:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7169:63;7239:12;7259:2;7254;:7;7239:22;;7277:1;7271:2;:7;7267:63;;7301:2;7295;7288:4;:9;;;;;;:15;7280:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7267:63;7347:14;:12;:14::i;:::-;7342:2;:19;;;;;;7337:24;;7377:14;:12;:14::i;:::-;7372:2;:19;;;;;;7367:24;;7397:12;7417:2;7412;:7;7397:22;;7435:1;7429:2;:7;7425:63;;7459:2;7453;7446:4;:9;;;;;;:15;7438:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7425:63;7572:22;;:::i;:::-;7597:14;;;;;;;;7606:4;7597:14;;;7572:39;;7626:27;7630:6;7638:14;;;;;;;;7647:4;7638:14;;;7626:3;:27::i;:::-;7617:36;;7695:27;7699:6;7707:14;;;;;;;;7716:4;7707:14;;;7695:3;:27::i;:::-;7686:36;;7764:27;7768:6;7776:14;;;;;;;;7785:4;7776:14;;;7764:3;:27::i;:::-;7755:36;;7831:6;7824:13;;;;;;;;;;;;6206:1636;;;;;:::o;2909:109::-;2970:7;996:25;2992:1;:7;;;:21;;;;;;2985:28;;2909:109;;;:::o;1274:134:153:-;1332:7;1358:43;1362:1;1365;1358:43;;;;;;;;;;;;;;;;;:3;:43::i;:::-;1351:50;;1274:134;;;;:::o;3515:314:7:-;3616:15;;:::i;:::-;3641:34;;:::i;:::-;3678:19;3687:9;3678:8;:19::i;:::-;3641:56;;3703:36;;:::i;:::-;3742:21;3751:11;3742:8;:21::i;:::-;3703:60;;3776:48;3783:18;3803:20;3776:6;:48::i;:::-;3769:55;;;;3515:314;;;;:::o;2163:127::-;2209:7;2231:54;2224:61;;2163:127;:::o;4068:159::-;4127:15;;:::i;:::-;4157:47;;;;;;;;996:25;;4167:1;:7;;;:21;;;;;;4166:37;4157:47;;;4150:54;;4068:159;;;:::o;4514:172::-;4576:15;;:::i;:::-;4606:57;;;;;;;;996:25;;4626:1;:7;;;:21;;;;;;4625:37;4615:1;:7;;;:47;4606:57;;;4599:64;;4514:172;;;:::o;1905:87::-;1952:7;1974:13;1967:20;;1905:87;:::o;5058:207::-;5132:15;;:::i;:::-;5155:9;5177:1;:7;;;5167:1;:7;;;:17;5155:29;;5203:1;:7;;;5198:1;:12;;5190:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;5249:11;;;;;;;;5258:1;5249:11;;;5242:18;;;5058:207;;;;:::o;1732:187:153:-;1818:7;1850:1;1845;:6;;1853:12;1837:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1837:29:153;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1876:9;1892:1;1888;:5;1876:17;;1911:1;1904:8;;;1732:187;;;;;:::o;9180:283:7:-;9257:15;;:::i;:::-;9299:1;9288;:7;;;:12;;9280:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;9328:9;996:25;9340:1;:7;;;:21;9328:33;;9394:1;:7;;;996:25;9375:1;:15;;;;;;:26;9367:57;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;9437:21;;;;;;;;9450:1;:7;;;9446:1;:11;;;;;;9437:21;;;9430:28;;;9180:283;;;;:::o;93:608:103:-;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.13;\n\nimport \"../Proposals.sol\";\nimport \"../../common/FixidityLib.sol\";\n\ncontract ProposalsTest {\n  using Proposals for Proposals.Proposal;\n\n  Proposals.Proposal private proposal;\n\n  function setNetworkWeight(uint256 networkWeight) external {\n    proposal.networkWeight = networkWeight;\n  }\n\n  function setVotes(uint256 yes, uint256 no, uint256 abstain) external {\n    proposal.votes.yes = yes;\n    proposal.votes.no = no;\n    proposal.votes.abstain = abstain;\n  }\n\n  function getSupportWithQuorumPadding(uint256 criticalBaseline) external view returns (uint256) {\n    return\n      FixidityLib.unwrap(proposal.getSupportWithQuorumPadding(FixidityLib.wrap(criticalBaseline)));\n  }\n}\n",
+  "sourcePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/test/ProposalsTest.sol",
+  "ast": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/test/ProposalsTest.sol",
+    "exportedSymbols": {
+      "ProposalsTest": [
+        32445
+      ]
+    },
+    "id": 32446,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 32372,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:103"
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/Proposals.sol",
+        "file": "../Proposals.sol",
+        "id": 32373,
+        "nodeType": "ImportDirective",
+        "scope": 32446,
+        "sourceUnit": 24389,
+        "src": "26:26:103",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/FixidityLib.sol",
+        "file": "../../common/FixidityLib.sol",
+        "id": 32374,
+        "nodeType": "ImportDirective",
+        "scope": 32446,
+        "sourceUnit": 3568,
+        "src": "53:38:103",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 32445,
+        "linearizedBaseContracts": [
+          32445
+        ],
+        "name": "ProposalsTest",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 32377,
+            "libraryName": {
+              "contractScope": null,
+              "id": 32375,
+              "name": "Proposals",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 24388,
+              "src": "126:9:103",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Proposals_$24388",
+                "typeString": "library Proposals"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "120:39:103",
+            "typeName": {
+              "contractScope": null,
+              "id": 32376,
+              "name": "Proposals.Proposal",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 23599,
+              "src": "140:18:103",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Proposal_$23599_storage_ptr",
+                "typeString": "struct Proposals.Proposal"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 32379,
+            "name": "proposal",
+            "nodeType": "VariableDeclaration",
+            "scope": 32445,
+            "src": "163:35:103",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Proposal_$23599_storage",
+              "typeString": "struct Proposals.Proposal"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 32378,
+              "name": "Proposals.Proposal",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 23599,
+              "src": "163:18:103",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Proposal_$23599_storage_ptr",
+                "typeString": "struct Proposals.Proposal"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 32390,
+              "nodeType": "Block",
+              "src": "261:49:103",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 32388,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 32384,
+                        "name": "proposal",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 32379,
+                        "src": "267:8:103",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Proposal_$23599_storage",
+                          "typeString": "struct Proposals.Proposal storage ref"
+                        }
+                      },
+                      "id": 32386,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "networkWeight",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 23596,
+                      "src": "267:22:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 32387,
+                      "name": "networkWeight",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 32381,
+                      "src": "292:13:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "267:38:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 32389,
+                  "nodeType": "ExpressionStatement",
+                  "src": "267:38:103"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 32391,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setNetworkWeight",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 32382,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32381,
+                  "name": "networkWeight",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32391,
+                  "src": "229:21:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32380,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "229:7:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "228:23:103"
+            },
+            "returnParameters": {
+              "id": 32383,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "261:0:103"
+            },
+            "scope": 32445,
+            "src": "203:107:103",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 32424,
+              "nodeType": "Block",
+              "src": "383:101:103",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 32406,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 32400,
+                          "name": "proposal",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 32379,
+                          "src": "389:8:103",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Proposal_$23599_storage",
+                            "typeString": "struct Proposals.Proposal storage ref"
+                          }
+                        },
+                        "id": 32403,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "votes",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 23589,
+                        "src": "389:14:103",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_VoteTotals_$23574_storage",
+                          "typeString": "struct Proposals.VoteTotals storage ref"
+                        }
+                      },
+                      "id": 32404,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "yes",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 23569,
+                      "src": "389:18:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 32405,
+                      "name": "yes",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 32393,
+                      "src": "410:3:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "389:24:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 32407,
+                  "nodeType": "ExpressionStatement",
+                  "src": "389:24:103"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 32414,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 32408,
+                          "name": "proposal",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 32379,
+                          "src": "419:8:103",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Proposal_$23599_storage",
+                            "typeString": "struct Proposals.Proposal storage ref"
+                          }
+                        },
+                        "id": 32411,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "votes",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 23589,
+                        "src": "419:14:103",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_VoteTotals_$23574_storage",
+                          "typeString": "struct Proposals.VoteTotals storage ref"
+                        }
+                      },
+                      "id": 32412,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "no",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 23571,
+                      "src": "419:17:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 32413,
+                      "name": "no",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 32395,
+                      "src": "439:2:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "419:22:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 32415,
+                  "nodeType": "ExpressionStatement",
+                  "src": "419:22:103"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 32422,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 32416,
+                          "name": "proposal",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 32379,
+                          "src": "447:8:103",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Proposal_$23599_storage",
+                            "typeString": "struct Proposals.Proposal storage ref"
+                          }
+                        },
+                        "id": 32419,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "votes",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 23589,
+                        "src": "447:14:103",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_VoteTotals_$23574_storage",
+                          "typeString": "struct Proposals.VoteTotals storage ref"
+                        }
+                      },
+                      "id": 32420,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "abstain",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 23573,
+                      "src": "447:22:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 32421,
+                      "name": "abstain",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 32397,
+                      "src": "472:7:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "447:32:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 32423,
+                  "nodeType": "ExpressionStatement",
+                  "src": "447:32:103"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 32425,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setVotes",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 32398,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32393,
+                  "name": "yes",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32425,
+                  "src": "332:11:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32392,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "332:7:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 32395,
+                  "name": "no",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32425,
+                  "src": "345:10:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32394,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "345:7:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 32397,
+                  "name": "abstain",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32425,
+                  "src": "357:15:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32396,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "357:7:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "331:42:103"
+            },
+            "returnParameters": {
+              "id": 32399,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "383:0:103"
+            },
+            "scope": 32445,
+            "src": "314:170:103",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 32443,
+              "nodeType": "Block",
+              "src": "583:116:103",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "arguments": [
+                              {
+                                "argumentTypes": null,
+                                "id": 32438,
+                                "name": "criticalBaseline",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 32427,
+                                "src": "675:16:103",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": null,
+                                "id": 32436,
+                                "name": "FixidityLib",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 3567,
+                                "src": "658:11:103",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_FixidityLib_$3567_$",
+                                  "typeString": "type(library FixidityLib)"
+                                }
+                              },
+                              "id": 32437,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "wrap",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 3001,
+                              "src": "658:16:103",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_struct$_Fraction_$2968_memory_ptr_$",
+                                "typeString": "function (uint256) pure returns (struct FixidityLib.Fraction memory)"
+                              }
+                            },
+                            "id": 32439,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "658:34:103",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Fraction_$2968_memory_ptr",
+                              "typeString": "struct FixidityLib.Fraction memory"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_struct$_Fraction_$2968_memory_ptr",
+                              "typeString": "struct FixidityLib.Fraction memory"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 32434,
+                            "name": "proposal",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 32379,
+                            "src": "621:8:103",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Proposal_$23599_storage",
+                              "typeString": "struct Proposals.Proposal storage ref"
+                            }
+                          },
+                          "id": 32435,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "getSupportWithQuorumPadding",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 24140,
+                          "src": "621:36:103",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_view$_t_struct$_Proposal_$23599_storage_ptr_$_t_struct$_Fraction_$2968_memory_ptr_$returns$_t_struct$_Fraction_$2968_memory_ptr_$bound_to$_t_struct$_Proposal_$23599_storage_ptr_$",
+                            "typeString": "function (struct Proposals.Proposal storage pointer,struct FixidityLib.Fraction memory) view returns (struct FixidityLib.Fraction memory)"
+                          }
+                        },
+                        "id": 32440,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "621:72:103",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Fraction_$2968_memory_ptr",
+                          "typeString": "struct FixidityLib.Fraction memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_Fraction_$2968_memory_ptr",
+                          "typeString": "struct FixidityLib.Fraction memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 32432,
+                        "name": "FixidityLib",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3567,
+                        "src": "602:11:103",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_FixidityLib_$3567_$",
+                          "typeString": "type(library FixidityLib)"
+                        }
+                      },
+                      "id": 32433,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "unwrap",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3012,
+                      "src": "602:18:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_Fraction_$2968_memory_ptr_$returns$_t_uint256_$",
+                        "typeString": "function (struct FixidityLib.Fraction memory) pure returns (uint256)"
+                      }
+                    },
+                    "id": 32441,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "602:92:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 32431,
+                  "id": 32442,
+                  "nodeType": "Return",
+                  "src": "589:105:103"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 32444,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSupportWithQuorumPadding",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 32428,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32427,
+                  "name": "criticalBaseline",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32444,
+                  "src": "525:24:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32426,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "525:7:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "524:26:103"
+            },
+            "returnParameters": {
+              "id": 32431,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32430,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32444,
+                  "src": "574:7:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32429,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "574:7:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "573:9:103"
+            },
+            "scope": 32445,
+            "src": "488:211:103",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 32446,
+        "src": "93:608:103"
+      }
+    ],
+    "src": "0:702:103"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/test/ProposalsTest.sol",
+    "exportedSymbols": {
+      "ProposalsTest": [
+        32445
+      ]
+    },
+    "id": 32446,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 32372,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:103"
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/Proposals.sol",
+        "file": "../Proposals.sol",
+        "id": 32373,
+        "nodeType": "ImportDirective",
+        "scope": 32446,
+        "sourceUnit": 24389,
+        "src": "26:26:103",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/FixidityLib.sol",
+        "file": "../../common/FixidityLib.sol",
+        "id": 32374,
+        "nodeType": "ImportDirective",
+        "scope": 32446,
+        "sourceUnit": 3568,
+        "src": "53:38:103",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 32445,
+        "linearizedBaseContracts": [
+          32445
+        ],
+        "name": "ProposalsTest",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 32377,
+            "libraryName": {
+              "contractScope": null,
+              "id": 32375,
+              "name": "Proposals",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 24388,
+              "src": "126:9:103",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Proposals_$24388",
+                "typeString": "library Proposals"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "120:39:103",
+            "typeName": {
+              "contractScope": null,
+              "id": 32376,
+              "name": "Proposals.Proposal",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 23599,
+              "src": "140:18:103",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Proposal_$23599_storage_ptr",
+                "typeString": "struct Proposals.Proposal"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 32379,
+            "name": "proposal",
+            "nodeType": "VariableDeclaration",
+            "scope": 32445,
+            "src": "163:35:103",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Proposal_$23599_storage",
+              "typeString": "struct Proposals.Proposal"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 32378,
+              "name": "Proposals.Proposal",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 23599,
+              "src": "163:18:103",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Proposal_$23599_storage_ptr",
+                "typeString": "struct Proposals.Proposal"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 32390,
+              "nodeType": "Block",
+              "src": "261:49:103",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 32388,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 32384,
+                        "name": "proposal",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 32379,
+                        "src": "267:8:103",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Proposal_$23599_storage",
+                          "typeString": "struct Proposals.Proposal storage ref"
+                        }
+                      },
+                      "id": 32386,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "networkWeight",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 23596,
+                      "src": "267:22:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 32387,
+                      "name": "networkWeight",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 32381,
+                      "src": "292:13:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "267:38:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 32389,
+                  "nodeType": "ExpressionStatement",
+                  "src": "267:38:103"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 32391,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setNetworkWeight",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 32382,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32381,
+                  "name": "networkWeight",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32391,
+                  "src": "229:21:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32380,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "229:7:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "228:23:103"
+            },
+            "returnParameters": {
+              "id": 32383,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "261:0:103"
+            },
+            "scope": 32445,
+            "src": "203:107:103",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 32424,
+              "nodeType": "Block",
+              "src": "383:101:103",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 32406,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 32400,
+                          "name": "proposal",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 32379,
+                          "src": "389:8:103",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Proposal_$23599_storage",
+                            "typeString": "struct Proposals.Proposal storage ref"
+                          }
+                        },
+                        "id": 32403,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "votes",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 23589,
+                        "src": "389:14:103",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_VoteTotals_$23574_storage",
+                          "typeString": "struct Proposals.VoteTotals storage ref"
+                        }
+                      },
+                      "id": 32404,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "yes",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 23569,
+                      "src": "389:18:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 32405,
+                      "name": "yes",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 32393,
+                      "src": "410:3:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "389:24:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 32407,
+                  "nodeType": "ExpressionStatement",
+                  "src": "389:24:103"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 32414,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 32408,
+                          "name": "proposal",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 32379,
+                          "src": "419:8:103",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Proposal_$23599_storage",
+                            "typeString": "struct Proposals.Proposal storage ref"
+                          }
+                        },
+                        "id": 32411,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "votes",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 23589,
+                        "src": "419:14:103",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_VoteTotals_$23574_storage",
+                          "typeString": "struct Proposals.VoteTotals storage ref"
+                        }
+                      },
+                      "id": 32412,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "no",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 23571,
+                      "src": "419:17:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 32413,
+                      "name": "no",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 32395,
+                      "src": "439:2:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "419:22:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 32415,
+                  "nodeType": "ExpressionStatement",
+                  "src": "419:22:103"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 32422,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 32416,
+                          "name": "proposal",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 32379,
+                          "src": "447:8:103",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Proposal_$23599_storage",
+                            "typeString": "struct Proposals.Proposal storage ref"
+                          }
+                        },
+                        "id": 32419,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "votes",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 23589,
+                        "src": "447:14:103",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_VoteTotals_$23574_storage",
+                          "typeString": "struct Proposals.VoteTotals storage ref"
+                        }
+                      },
+                      "id": 32420,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "abstain",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 23573,
+                      "src": "447:22:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 32421,
+                      "name": "abstain",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 32397,
+                      "src": "472:7:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "447:32:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 32423,
+                  "nodeType": "ExpressionStatement",
+                  "src": "447:32:103"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 32425,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setVotes",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 32398,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32393,
+                  "name": "yes",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32425,
+                  "src": "332:11:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32392,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "332:7:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 32395,
+                  "name": "no",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32425,
+                  "src": "345:10:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32394,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "345:7:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 32397,
+                  "name": "abstain",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32425,
+                  "src": "357:15:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32396,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "357:7:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "331:42:103"
+            },
+            "returnParameters": {
+              "id": 32399,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "383:0:103"
+            },
+            "scope": 32445,
+            "src": "314:170:103",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 32443,
+              "nodeType": "Block",
+              "src": "583:116:103",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "arguments": [
+                              {
+                                "argumentTypes": null,
+                                "id": 32438,
+                                "name": "criticalBaseline",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 32427,
+                                "src": "675:16:103",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": null,
+                                "id": 32436,
+                                "name": "FixidityLib",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 3567,
+                                "src": "658:11:103",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_contract$_FixidityLib_$3567_$",
+                                  "typeString": "type(library FixidityLib)"
+                                }
+                              },
+                              "id": 32437,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "wrap",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 3001,
+                              "src": "658:16:103",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_struct$_Fraction_$2968_memory_ptr_$",
+                                "typeString": "function (uint256) pure returns (struct FixidityLib.Fraction memory)"
+                              }
+                            },
+                            "id": 32439,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "658:34:103",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Fraction_$2968_memory_ptr",
+                              "typeString": "struct FixidityLib.Fraction memory"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_struct$_Fraction_$2968_memory_ptr",
+                              "typeString": "struct FixidityLib.Fraction memory"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 32434,
+                            "name": "proposal",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 32379,
+                            "src": "621:8:103",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Proposal_$23599_storage",
+                              "typeString": "struct Proposals.Proposal storage ref"
+                            }
+                          },
+                          "id": 32435,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "getSupportWithQuorumPadding",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 24140,
+                          "src": "621:36:103",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_view$_t_struct$_Proposal_$23599_storage_ptr_$_t_struct$_Fraction_$2968_memory_ptr_$returns$_t_struct$_Fraction_$2968_memory_ptr_$bound_to$_t_struct$_Proposal_$23599_storage_ptr_$",
+                            "typeString": "function (struct Proposals.Proposal storage pointer,struct FixidityLib.Fraction memory) view returns (struct FixidityLib.Fraction memory)"
+                          }
+                        },
+                        "id": 32440,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "621:72:103",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Fraction_$2968_memory_ptr",
+                          "typeString": "struct FixidityLib.Fraction memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_Fraction_$2968_memory_ptr",
+                          "typeString": "struct FixidityLib.Fraction memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 32432,
+                        "name": "FixidityLib",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3567,
+                        "src": "602:11:103",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_FixidityLib_$3567_$",
+                          "typeString": "type(library FixidityLib)"
+                        }
+                      },
+                      "id": 32433,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "unwrap",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3012,
+                      "src": "602:18:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_Fraction_$2968_memory_ptr_$returns$_t_uint256_$",
+                        "typeString": "function (struct FixidityLib.Fraction memory) pure returns (uint256)"
+                      }
+                    },
+                    "id": 32441,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "602:92:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 32431,
+                  "id": 32442,
+                  "nodeType": "Return",
+                  "src": "589:105:103"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 32444,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSupportWithQuorumPadding",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 32428,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32427,
+                  "name": "criticalBaseline",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32444,
+                  "src": "525:24:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32426,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "525:7:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "524:26:103"
+            },
+            "returnParameters": {
+              "id": 32431,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32430,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32444,
+                  "src": "574:7:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32429,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "574:7:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "573:9:103"
+            },
+            "scope": 32445,
+            "src": "488:211:103",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 32446,
+        "src": "93:608:103"
+      }
+    ],
+    "src": "0:702:103"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.13+commit.5b0b510c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2022-05-06T03:53:12.985Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

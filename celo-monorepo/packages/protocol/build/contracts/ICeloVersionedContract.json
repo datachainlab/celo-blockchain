@@ -1,0 +1,409 @@
+{
+  "contractName": "ICeloVersionedContract",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getVersionNumber",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.13+commit.5b0b510c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getVersionNumber\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"getVersionNumber()\":{\"return\":\"The storage, major, minor, and patch version of the contract.\"}}},\"userdoc\":{\"methods\":{\"getVersionNumber()\":{\"notice\":\"Returns the storage, major, minor, and patch version of the contract.\"}}}},\"settings\":{\"compilationTarget\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/ICeloVersionedContract.sol\":\"ICeloVersionedContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/ICeloVersionedContract.sol\":{\"keccak256\":\"0x9f902faa66069500c7b5e8c9a53ca6afff99dfe6cd3915aa0f3c4fe6a9905ba5\",\"urls\":[\"bzz-raw://880c77a981296abbf6fe9a7e3e0d5d441b19de70d310b10f4a469ce344e8e96c\",\"dweb:/ipfs/QmUAY1xYLXUQXwgBoRFaXFv5z9a6sMYT9v7WdEAAeSGCwW\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.5.13;\n\ninterface ICeloVersionedContract {\n  /**\n   * @notice Returns the storage, major, minor, and patch version of the contract.\n   * @return The storage, major, minor, and patch version of the contract.\n   */\n  function getVersionNumber() external pure returns (uint256, uint256, uint256, uint256);\n}\n",
+  "sourcePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/ICeloVersionedContract.sol",
+  "ast": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/ICeloVersionedContract.sol",
+    "exportedSymbols": {
+      "ICeloVersionedContract": [
+        9340
+      ]
+    },
+    "id": 9341,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9328,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:27"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 9340,
+        "linearizedBaseContracts": [
+          9340
+        ],
+        "name": "ICeloVersionedContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@notice Returns the storage, major, minor, and patch version of the contract.\n@return The storage, major, minor, and patch version of the contract.",
+            "id": 9339,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getVersionNumber",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9329,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "258:2:27"
+            },
+            "returnParameters": {
+              "id": 9338,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9331,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9339,
+                  "src": "284:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9330,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "284:7:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9333,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9339,
+                  "src": "293:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9332,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "293:7:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9335,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9339,
+                  "src": "302:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9334,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "302:7:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9337,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9339,
+                  "src": "311:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9336,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "311:7:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "283:36:27"
+            },
+            "scope": 9340,
+            "src": "233:87:27",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9341,
+        "src": "26:296:27"
+      }
+    ],
+    "src": "0:323:27"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/ICeloVersionedContract.sol",
+    "exportedSymbols": {
+      "ICeloVersionedContract": [
+        9340
+      ]
+    },
+    "id": 9341,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9328,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:27"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 9340,
+        "linearizedBaseContracts": [
+          9340
+        ],
+        "name": "ICeloVersionedContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@notice Returns the storage, major, minor, and patch version of the contract.\n@return The storage, major, minor, and patch version of the contract.",
+            "id": 9339,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getVersionNumber",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9329,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "258:2:27"
+            },
+            "returnParameters": {
+              "id": 9338,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9331,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9339,
+                  "src": "284:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9330,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "284:7:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9333,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9339,
+                  "src": "293:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9332,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "293:7:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9335,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9339,
+                  "src": "302:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9334,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "302:7:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9337,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9339,
+                  "src": "311:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9336,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "311:7:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "283:36:27"
+            },
+            "scope": 9340,
+            "src": "233:87:27",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9341,
+        "src": "26:296:27"
+      }
+    ],
+    "src": "0:323:27"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.13+commit.5b0b510c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2022-05-06T03:53:12.733Z",
+  "devdoc": {
+    "methods": {
+      "getVersionNumber()": {
+        "return": "The storage, major, minor, and patch version of the contract."
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "getVersionNumber()": {
+        "notice": "Returns the storage, major, minor, and patch version of the contract."
+      }
+    }
+  }
+}

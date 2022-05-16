@@ -1,0 +1,775 @@
+{
+  "contractName": "Freezable",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "registryAddress",
+          "type": "address"
+        }
+      ],
+      "name": "RegistrySet",
+      "type": "event"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isOwner",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "registry",
+      "outputs": [
+        {
+          "internalType": "contract IRegistry",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "registryAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setRegistry",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.13+commit.5b0b510c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"registryAddress\",\"type\":\"address\"}],\"name\":\"RegistrySet\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"registry\",\"outputs\":[{\"internalType\":\"contract IRegistry\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"registryAddress\",\"type\":\"address\"}],\"name\":\"setRegistry\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"isOwner()\":{\"details\":\"Returns true if the caller is the current owner.\"},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"setRegistry(address)\":{\"params\":{\"registryAddress\":\"The address of a registry contract for routing to other contracts.\"}},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}}},\"userdoc\":{\"methods\":{\"setRegistry(address)\":{\"notice\":\"Updates the address pointing to a Registry contract.\"}}}},\"settings\":{\"compilationTarget\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/Freezable.sol\":\"Freezable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/Freezable.sol\":{\"keccak256\":\"0x2d264574f693b31cdf1ef1fe44dd07f4ddd60c1979e79fc84b6f3019ceda9ac6\",\"urls\":[\"bzz-raw://eb43996e3f01765f6b4997ef86dceca4af987a9c6f2743de7d29ec887651ea2b\",\"dweb:/ipfs/QmdRfAZ97XBNd42XYQBWVFAx7gAKUuS3KvL41ryxo9YTwT\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/UsingRegistry.sol\":{\"keccak256\":\"0xfdd9e70bd58259b491ec54779715d7469ab4f804836bf5f63ff86921d0cae056\",\"urls\":[\"bzz-raw://e55f23f464e49c42b1f31782dcb88cbd2ca64e050d5f110ccdc2ffd50cd582ff\",\"dweb:/ipfs/QmfBiet9GbT9S9rn9SG9CkyXQGAMQRuk4EBmChY1m4kv47\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/IAccounts.sol\":{\"keccak256\":\"0x6132a2e3105dbf00b52447db8bc307b052b2d02c0d00497bd0074ae3ce48027a\",\"urls\":[\"bzz-raw://07380d2593f1359e1440153597d16d1b4085a421f52909fafe3fa58f13088c62\",\"dweb:/ipfs/QmSjtmfFswK15Ta5NePg5voNVh9X63muCLCbQKgAZFG4rg\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/IFeeCurrencyWhitelist.sol\":{\"keccak256\":\"0xd4711baf3e38a0abeb3ef48eaab21aeb917f5e0a185cf463fddeb4bf20277b68\",\"urls\":[\"bzz-raw://8f350863943ab54dcf4d5ea525c16748f59263bf36c1d85251c1164d0e592032\",\"dweb:/ipfs/QmXAG6fvVQKM86rVsk6R3ndEoHtS9fcAAVxBApJ5j3LWeK\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/IFreezer.sol\":{\"keccak256\":\"0x12508a9d528d1b63dc06644e9d97e864acc94f8a763cf8555e90bcdf1b2f8b21\",\"urls\":[\"bzz-raw://32df109167a13e684c9b296a0e13dda1899e418788eb59bf59aedd7a3ce65466\",\"dweb:/ipfs/QmR6BJCRFMSQpBpnSH2vzLE959FhXnmreDocWWc7fUYnnu\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/interfaces/IRegistry.sol\":{\"keccak256\":\"0x78ba82722d28e815c117f33d4659404f0707dab1c9b51f1bce5d4c15d6c94537\",\"urls\":[\"bzz-raw://0cea84b948896aece11c64b97c22b0f08f86cb45e166a004db4a88a98952cbfa\",\"dweb:/ipfs/QmR4uSGcs4nmph6duroscchstSwMzWSV8CDvD2SSnWuHbs\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/interfaces/IElection.sol\":{\"keccak256\":\"0xebcd0d7dbbb2df503967ad63c9ddd437cef89a94ba2cc2f9ce274f41a4c901ee\",\"urls\":[\"bzz-raw://84dcf3a9952f1ce9a9110abb1783dfead290fd17c28216c5acb22de9d090921d\",\"dweb:/ipfs/QmeNoLz8WcHX9GLcBfQChXFHsFDRaVRRXnPXXvB2qVTaSZ\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/interfaces/IGovernance.sol\":{\"keccak256\":\"0x227bf6a6b56411c368c9752761e2202ad71f2199deb2b114b125712b63372b7e\",\"urls\":[\"bzz-raw://cabeae6e6c47364291f12cf69658dcf5bdd8ac7eebda53d48a2b03aab96386a3\",\"dweb:/ipfs/QmUtPSC4hVz79XVVjFwQ6CozMd6oAR1m6yrPFkHD5sCdB1\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/interfaces/ILockedGold.sol\":{\"keccak256\":\"0x577d01d8a1fbf47980fb5ffd36de2084ec255889b15671adfecd3a285df4f253\",\"urls\":[\"bzz-raw://6b955b6829748cd136fa92c3a434f5419e4eb024d535a854900ad48bd4151b67\",\"dweb:/ipfs/QmXM5uL5dsKecYyedAzsrZXAp81NtWQErbbVEFccJ6ZqiY\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/governance/interfaces/IValidators.sol\":{\"keccak256\":\"0x524a9e48689537421f97296ffd57fa0f2887117f9af9e71dd5ed17e66ba92d2a\",\"urls\":[\"bzz-raw://cf5d0c2f6ee9b2c8e270162455177e9c3bac79ac07d4f37c86f7f2ee5978a756\",\"dweb:/ipfs/QmZTKmytn1Wi3QfU3bHuSaSeYQzRrFKehyngrg37rHD3vV\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/identity/interfaces/IAttestations.sol\":{\"keccak256\":\"0x979aaac636fe6a64f97034bf0bf062b5f0efd6e6f9f3fe84e81180f82eeb7a3e\",\"urls\":[\"bzz-raw://c1255d08278188247ef81fb09edd2d1d4a019fb0fe80fd3d9850415c5eb5caaf\",\"dweb:/ipfs/QmcJvqSM35nAR8p8LwVczhnaY6VwTRThNjfCzkzeiAkz45\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/identity/interfaces/IRandom.sol\":{\"keccak256\":\"0xd65fd529d133cbde94628b39b0d2f0f4b6d0af2e8f97c0e6b4b2cd476479ed1d\",\"urls\":[\"bzz-raw://f2c6fe351990bfdeb55484bd3622d44c8f58579a7212d5cce71a82df846497f5\",\"dweb:/ipfs/QmRDDTXUqbA6dHfJe4ZS1442JDAfwoHq2eH9LHnQyzsh44\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/stability/interfaces/IExchange.sol\":{\"keccak256\":\"0xf2934d473f1b42566dbd90b4777725c966524bab78ce734b51f2510c6ef83ebb\",\"urls\":[\"bzz-raw://9fa1c7d72149b281ce9f54e636e37753fffcfa45833753ca700b8861a2a25a22\",\"dweb:/ipfs/QmUAgNosF21EroMTGgEjy6qJZU7njH3YMQwqj7j515HDVa\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/stability/interfaces/IReserve.sol\":{\"keccak256\":\"0x8da4d702b47a7e60981ca416f2d0f24a3c1dea9ab44f04b695c0fde02c84a38e\",\"urls\":[\"bzz-raw://198fb3cd945e374926e3d6bcb2469b7f5c635e78b40417a4b3a1eacabeca234b\",\"dweb:/ipfs/Qma8RRSqksFCzL5gWTXmGtJvC4Mw1bgquvN33nKhrRwUrD\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/stability/interfaces/ISortedOracles.sol\":{\"keccak256\":\"0x8f80e430800fff2f04f3981c4b73a2a374b2c2150543a2de51fcf7ba4fb08789\",\"urls\":[\"bzz-raw://f1a472385d5fa1b1cc4ab6ff948cd11f86c55328841d89f39f02b64449d3ac1a\",\"dweb:/ipfs/QmSYfwR8RJ2nyzt9VJtLKqaUHwAPfz579vhcQP7LRLaqTe\"]},\"/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/stability/interfaces/IStableToken.sol\":{\"keccak256\":\"0x091e577acecdf050fe4c41133b11fe330d07050c5fe78b65bfce32ccc29e51c6\",\"urls\":[\"bzz-raw://94f7d7578274be8212b8c9a3f0759d884969b05a7f0c64c7c9352102f4e51ab4\",\"dweb:/ipfs/Qmd3bERcFLrrvpURuzKUg6YCSFisNQ36YpRLWkxEcS1Tkj\"]},\"openzeppelin-solidity/contracts/GSN/Context.sol\":{\"keccak256\":\"0x90a3995645af7562d84b9d69363ffa5ae7217714ab61e951bf7bc450f40e4061\",\"urls\":[\"bzz-raw://216ef9d6b614db4eb46970b4e84903f2534a45572dd30a79f0041f1a5830f436\",\"dweb:/ipfs/QmNPrJ4MWKUAWzKXpUqeyKRUfosaoANZAqXgvepdrCwZAG\"]},\"openzeppelin-solidity/contracts/ownership/Ownable.sol\":{\"keccak256\":\"0x6fb9d7889769d7cc161225f9ef7a90e468ba9788b253816f8d8b6894d3472c24\",\"urls\":[\"bzz-raw://cf4c00fc3c37cc5acf0c82ec6fd97bab67d72c2567fdc0ebf023d9c09b30a08e\",\"dweb:/ipfs/Qmb7TChG6DsEDX7LooJ4vmxot19f7VXX8S1zUGPeJTWbwZ\"]},\"openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xe5bb0f57cff3e299f360052ba50f1ea0fff046df2be070b6943e0e3c3fdad8a9\",\"urls\":[\"bzz-raw://59fd025151435da35faa8093a5c7a17de02de9d08ad27275c5cdf05050820d91\",\"dweb:/ipfs/QmQMvwEcPhoRXzbXyrdoeRtvLoifUW9Qh7Luho7bmUPRkc\"]}},\"version\":1}",
+  "bytecode": "0x608060405260006100146100b760201b60201c565b9050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508073ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3506100bf565b600033905090565b610766806100ce6000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c8063715018a6146100675780637b103999146100715780638da5cb5b146100bb5780638f32d59b14610105578063a91ee0dc14610127578063f2fde38b1461016b575b600080fd5b61006f6101af565b005b6100796102e8565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100c361030e565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61010d610337565b604051808215151515815260200191505060405180910390f35b6101696004803603602081101561013d57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610395565b005b6101ad6004803603602081101561018157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610539565b005b6101b7610337565b610229576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166103796105bf565b73ffffffffffffffffffffffffffffffffffffffff1614905090565b61039d610337565b61040f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614156104b2576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f43616e6e6f7420726567697374657220746865206e756c6c206164647265737381525060200191505060405180910390fd5b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508073ffffffffffffffffffffffffffffffffffffffff167f27fe5f0c1c3b1ed427cc63d0f05759ffdecf9aec9e18d31ef366fc8a6cb5dc3b60405160405180910390a250565b610541610337565b6105b3576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b6105bc816105c7565b50565b600033905090565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561064d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602681526020018061070c6026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a265627a7a7231582007535cedbdb92bf602f054e3e03e558fcde5b2bd6b0b0a52c10feab580c7e3df64736f6c634300050d0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c8063715018a6146100675780637b103999146100715780638da5cb5b146100bb5780638f32d59b14610105578063a91ee0dc14610127578063f2fde38b1461016b575b600080fd5b61006f6101af565b005b6100796102e8565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100c361030e565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61010d610337565b604051808215151515815260200191505060405180910390f35b6101696004803603602081101561013d57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610395565b005b6101ad6004803603602081101561018157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610539565b005b6101b7610337565b610229576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166103796105bf565b73ffffffffffffffffffffffffffffffffffffffff1614905090565b61039d610337565b61040f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614156104b2576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f43616e6e6f7420726567697374657220746865206e756c6c206164647265737381525060200191505060405180910390fd5b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508073ffffffffffffffffffffffffffffffffffffffff167f27fe5f0c1c3b1ed427cc63d0f05759ffdecf9aec9e18d31ef366fc8a6cb5dc3b60405160405180910390a250565b610541610337565b6105b3576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b6105bc816105c7565b50565b600033905090565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561064d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602681526020018061070c6026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a265627a7a7231582007535cedbdb92bf602f054e3e03e558fcde5b2bd6b0b0a52c10feab580c7e3df64736f6c634300050d0032",
+  "sourceMap": "57:282:8:-;;;698:17:154;718:12;:10;;;:12;;:::i;:::-;698:32;;749:9;740:6;;:18;;;;;;;;;;;;;;;;;;806:9;773:43;;802:1;773:43;;;;;;;;;;;;664:159;57:282:8;;788:96:150;833:15;867:10;860:17;;788:96;:::o;57:282:8:-;;;;;;;",
+  "deployedSourceMap": "57:282:8:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;57:282:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1684:137:154;;;:::i;:::-;;2540:25:23;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;899:77:154;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1250:92;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;3089:230:23;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;3089:230:23;;;;;;;;;;;;;;;;;;;:::i;:::-;;1970:107:154;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1970:107:154;;;;;;;;;;;;;;;;;;;:::i;:::-;;1684:137;1103:9;:7;:9::i;:::-;1095:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1782:1;1745:40;;1766:6;;;;;;;;;;;1745:40;;;;;;;;;;;;1812:1;1795:6;;:19;;;;;;;;;;;;;;;;;;1684:137::o;2540:25:23:-;;;;;;;;;;;;;:::o;899:77:154:-;937:7;963:6;;;;;;;;;;;956:13;;899:77;:::o;1250:92::-;1290:4;1329:6;;;;;;;;;;;1313:22;;:12;:10;:12::i;:::-;:22;;;1306:29;;1250:92;:::o;3089:230:23:-;1103:9:154;:7;:9::i;:::-;1095:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3193:1:23;3166:29;;:15;:29;;;;3158:74;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3259:15;3238:8;;:37;;;;;;;;;;;;;;;;;;3298:15;3286:28;;;;;;;;;;;;3089:230;:::o;1970:107:154:-;1103:9;:7;:9::i;:::-;1095:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2042:28;2061:8;2042:18;:28::i;:::-;1970:107;:::o;788:96:150:-;833:15;867:10;860:17;;788:96;:::o;2178:225:154:-;2271:1;2251:22;;:8;:22;;;;2243:73;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2360:8;2331:38;;2352:6;;;;;;;;;;;2331:38;;;;;;;;;;;;2388:8;2379:6;;:17;;;;;;;;;;;;;;;;;;2178:225;:::o",
+  "source": "pragma solidity ^0.5.13;\n\nimport \"./UsingRegistry.sol\";\n\ncontract Freezable is UsingRegistry {\n  // onlyWhenNotFrozen functions can only be called when `frozen` is false, otherwise they will\n  // revert.\n  modifier onlyWhenNotFrozen() {\n    require(!getFreezer().isFrozen(address(this)), \"can't call when contract is frozen\");\n    _;\n  }\n}\n",
+  "sourcePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/Freezable.sol",
+  "ast": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/Freezable.sol",
+    "exportedSymbols": {
+      "Freezable": [
+        3589
+      ]
+    },
+    "id": 3590,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3569,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:8"
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/UsingRegistry.sol",
+        "file": "./UsingRegistry.sol",
+        "id": 3570,
+        "nodeType": "ImportDirective",
+        "scope": 3590,
+        "sourceUnit": 8573,
+        "src": "26:29:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 3571,
+              "name": "UsingRegistry",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8572,
+              "src": "79:13:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_UsingRegistry_$8572",
+                "typeString": "contract UsingRegistry"
+              }
+            },
+            "id": 3572,
+            "nodeType": "InheritanceSpecifier",
+            "src": "79:13:8"
+          }
+        ],
+        "contractDependencies": [
+          8572,
+          43492,
+          43947
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3589,
+        "linearizedBaseContracts": [
+          3589,
+          8572,
+          43947,
+          43492
+        ],
+        "name": "Freezable",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 3587,
+              "nodeType": "Block",
+              "src": "235:102:8",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 3582,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "UnaryOperation",
+                        "operator": "!",
+                        "prefix": true,
+                        "src": "249:37:8",
+                        "subExpression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "arguments": [
+                                {
+                                  "argumentTypes": null,
+                                  "id": 3579,
+                                  "name": "this",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 45165,
+                                  "src": "280:4:8",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_contract$_Freezable_$3589",
+                                    "typeString": "contract Freezable"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_contract$_Freezable_$3589",
+                                    "typeString": "contract Freezable"
+                                  }
+                                ],
+                                "id": 3578,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "272:7:8",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_address_$",
+                                  "typeString": "type(address)"
+                                },
+                                "typeName": "address"
+                              },
+                              "id": 3580,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "272:13:8",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "arguments": [],
+                              "expression": {
+                                "argumentTypes": [],
+                                "id": 3575,
+                                "name": "getFreezer",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 8467,
+                                "src": "250:10:8",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IFreezer_$9364_$",
+                                  "typeString": "function () view returns (contract IFreezer)"
+                                }
+                              },
+                              "id": 3576,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "250:12:8",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IFreezer_$9364",
+                                "typeString": "contract IFreezer"
+                              }
+                            },
+                            "id": 3577,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "isFrozen",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 9363,
+                            "src": "250:21:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
+                              "typeString": "function (address) view external returns (bool)"
+                            }
+                          },
+                          "id": 3581,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "250:36:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "63616e27742063616c6c207768656e20636f6e74726163742069732066726f7a656e",
+                        "id": 3583,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "288:36:8",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_5887998fd0cc8fe29f593f0d6a6ef4ffd3ae8a4c67fbef99f5d4587c096a9a6b",
+                          "typeString": "literal_string \"can't call when contract is frozen\""
+                        },
+                        "value": "can't call when contract is frozen"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_5887998fd0cc8fe29f593f0d6a6ef4ffd3ae8a4c67fbef99f5d4587c096a9a6b",
+                          "typeString": "literal_string \"can't call when contract is frozen\""
+                        }
+                      ],
+                      "id": 3574,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        45088,
+                        45089
+                      ],
+                      "referencedDeclaration": 45089,
+                      "src": "241:7:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 3584,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "241:84:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3585,
+                  "nodeType": "ExpressionStatement",
+                  "src": "241:84:8"
+                },
+                {
+                  "id": 3586,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "331:1:8"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 3588,
+            "name": "onlyWhenNotFrozen",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 3573,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "232:2:8"
+            },
+            "src": "206:131:8",
+            "visibility": "internal"
+          }
+        ],
+        "scope": 3590,
+        "src": "57:282:8"
+      }
+    ],
+    "src": "0:340:8"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/Freezable.sol",
+    "exportedSymbols": {
+      "Freezable": [
+        3589
+      ]
+    },
+    "id": 3590,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3569,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:8"
+      },
+      {
+        "absolutePath": "/Users/hiroki.yasui/go/src/github.com/celo-org/celo-monorepo/packages/protocol/contracts/common/UsingRegistry.sol",
+        "file": "./UsingRegistry.sol",
+        "id": 3570,
+        "nodeType": "ImportDirective",
+        "scope": 3590,
+        "sourceUnit": 8573,
+        "src": "26:29:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 3571,
+              "name": "UsingRegistry",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8572,
+              "src": "79:13:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_UsingRegistry_$8572",
+                "typeString": "contract UsingRegistry"
+              }
+            },
+            "id": 3572,
+            "nodeType": "InheritanceSpecifier",
+            "src": "79:13:8"
+          }
+        ],
+        "contractDependencies": [
+          8572,
+          43492,
+          43947
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3589,
+        "linearizedBaseContracts": [
+          3589,
+          8572,
+          43947,
+          43492
+        ],
+        "name": "Freezable",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 3587,
+              "nodeType": "Block",
+              "src": "235:102:8",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 3582,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "UnaryOperation",
+                        "operator": "!",
+                        "prefix": true,
+                        "src": "249:37:8",
+                        "subExpression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "arguments": [
+                                {
+                                  "argumentTypes": null,
+                                  "id": 3579,
+                                  "name": "this",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 45165,
+                                  "src": "280:4:8",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_contract$_Freezable_$3589",
+                                    "typeString": "contract Freezable"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_contract$_Freezable_$3589",
+                                    "typeString": "contract Freezable"
+                                  }
+                                ],
+                                "id": 3578,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "272:7:8",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_address_$",
+                                  "typeString": "type(address)"
+                                },
+                                "typeName": "address"
+                              },
+                              "id": 3580,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "272:13:8",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "arguments": [],
+                              "expression": {
+                                "argumentTypes": [],
+                                "id": 3575,
+                                "name": "getFreezer",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 8467,
+                                "src": "250:10:8",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IFreezer_$9364_$",
+                                  "typeString": "function () view returns (contract IFreezer)"
+                                }
+                              },
+                              "id": 3576,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "250:12:8",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IFreezer_$9364",
+                                "typeString": "contract IFreezer"
+                              }
+                            },
+                            "id": 3577,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "isFrozen",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 9363,
+                            "src": "250:21:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
+                              "typeString": "function (address) view external returns (bool)"
+                            }
+                          },
+                          "id": 3581,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "250:36:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "63616e27742063616c6c207768656e20636f6e74726163742069732066726f7a656e",
+                        "id": 3583,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "288:36:8",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_5887998fd0cc8fe29f593f0d6a6ef4ffd3ae8a4c67fbef99f5d4587c096a9a6b",
+                          "typeString": "literal_string \"can't call when contract is frozen\""
+                        },
+                        "value": "can't call when contract is frozen"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_5887998fd0cc8fe29f593f0d6a6ef4ffd3ae8a4c67fbef99f5d4587c096a9a6b",
+                          "typeString": "literal_string \"can't call when contract is frozen\""
+                        }
+                      ],
+                      "id": 3574,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        45088,
+                        45089
+                      ],
+                      "referencedDeclaration": 45089,
+                      "src": "241:7:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 3584,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "241:84:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3585,
+                  "nodeType": "ExpressionStatement",
+                  "src": "241:84:8"
+                },
+                {
+                  "id": 3586,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "331:1:8"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 3588,
+            "name": "onlyWhenNotFrozen",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 3573,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "232:2:8"
+            },
+            "src": "206:131:8",
+            "visibility": "internal"
+          }
+        ],
+        "scope": 3590,
+        "src": "57:282:8"
+      }
+    ],
+    "src": "0:340:8"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.13+commit.5b0b510c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2022-05-06T03:53:12.673Z",
+  "devdoc": {
+    "methods": {
+      "isOwner()": {
+        "details": "Returns true if the caller is the current owner."
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "setRegistry(address)": {
+        "params": {
+          "registryAddress": "The address of a registry contract for routing to other contracts."
+        }
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "setRegistry(address)": {
+        "notice": "Updates the address pointing to a Registry contract."
+      }
+    }
+  }
+}
